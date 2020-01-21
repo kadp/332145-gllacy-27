@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Шешеня](https://up.htmlacademy.ru/htmlcss/27/user/332145).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull).
 
 ---
 
