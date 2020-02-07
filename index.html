@@ -3,29 +3,63 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gllacy Shop</title>
+  <title>Магазин Глейси</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header>
-    <a href="index.html">Логотип Глейси</a>
+    <a title="Логотип Глейси">Логотип Глейси</a>
     <nav>
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <ul>
+            <li><a href="#">Новинки</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul>
-        <li><a>Поиск</a></li>
-        <li><a>Вход</a></li>
-        <li><a>Пустая корзина</a></li>
+        <li>
+          <form action="https://echo.htmlacademy.ru" name="search" method="post">
+            <a>Поиск</a>
+            <p>
+              <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+              <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
+            </p>
+          </form>
+        </li>
+        <li>
+          <form action="https://echo.htmlacademy.ru" name="authorization" method="post">
+            <a>Вход</a>
+            <p>
+              <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
+              <input id="user-login" type="email" name="login" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
+              <input id="user-password" type="password" name="password" placeholder="••••••••">
+            </p>
+            <button type="submit">Войти</button>
+          </form>
+          <a href="#" title="Забыли пароль?">Забыли пароль?</a>
+          <a href="#" title="Новая регистрация">Новая регистрация</a>
+        </li>
+        <li>
+          <a>Пустая корзина</a>
+        </li>
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+    <p><a href="tel:88124502525" title="Контактный номер телефона">8 812 450-25-25</a></p>
   </header>
   <main>
-    <h1>Магазин Глейси</h1>
+    <h1 class="visually-hidden">Магазин Глейси</h1>
     <section>
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
       <ul>
@@ -36,7 +70,7 @@
       <button type="button">Давайте оба!</button>
     </section>
     <section>
-      <h2>Акции</h2>
+      <h2 class="visually-hidden">Акции</h2>
       <ul>
         <li>
           <h2>Малинка даром!</h2>
@@ -52,13 +86,13 @@
       </ul>
     </section>
     <section>
-      <h2>Хиты продаж</h2>
+      <h2 class="visually-hidden">Хиты продаж</h2>
       <ul>
         <li>
           <div>
             Иконка Хит
             <img src="./img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
-              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>310 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </div>
@@ -67,7 +101,7 @@
           <div>
             Иконка Хит
             <img src="./img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
-              alt="Сливочно-кофейное с кусочками шоколада">
+              alt="Мороженое сливочно-кофейное с кусочками шоколада">
             <p>380 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </div>
@@ -76,7 +110,7 @@
           <div>
             Иконка Хит
             <img src="./img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
-              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
             <p>355 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </div>
@@ -85,7 +119,7 @@
           <div>
             Иконка Хит
             <img src="./img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
-              alt="Сливочное крем-брюле с карамельной подливкой">
+              alt="Мороженое сливочное крем-брюле с карамельной подливкой">
             <p>415 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
@@ -93,74 +127,100 @@
       </ul>
     </section>
     <section>
-      <h2>Об магазине</h2>
+      <h2 class="visually-hidden">Об магазине</h2>
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul>
         <li>
-          <p>Мороженно</p>
+          <p class="visually-hidden">Мороженно</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
             и проверенных временем технологий.</p>
         </li>
         <li>
-          <p>Экологичность</p>
+          <p class="visually-hidden">Экологичность</p>
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
             дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
         <li>
-          <p>Корова</p>
+          <p class="visually-hidden">Корова</p>
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.</p>
         </li>
         <li>
-          <p>Термометр</p>
+          <p class="visually-hidden">Термометр</p>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
     </section>
     <section>
-      <h2>Новости блога</h2>
+      <h2 class="visually-hidden">Блог</h2>
       <p>Новое в нашем блоге</p>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </section>
     <section>
-      <h2>Почтовая расслыка</h2>
+      <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form action="url" name="email" method="post">
-        <input type="email" name="email" placeholder="email@example.com">
+      <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
+        <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
+        <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
         <button type="submit">Отправить</button>
       </form>
     </section>
     <section>
-      <h2>Как добраться</h2>
+      <h2 class="visually-hidden">Как добраться</h2>
       <!-- подключение карты, пока без JS -->
-      <img src="./img/map.png" width="1200" height="430" alt="Карта">
+      <img src="./img/map.png" width="1200" height="430"
+        alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <ul>
+        <li>
+          <h3>Мы обязательно вам ответим!</h3>
+        </li>
+        <li>
+          <a>&#10006;<a>
+        </li>
+        <li>
+          <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
+            <P>
+              <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+              <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+            </P>
+            <p>
+              <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+              <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+              <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме" rows="5"></textarea>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+        </li>
+      </ul>
     </section>
   </main>
   <footer>
     <ul>
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Инстаграм</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Вконтакте</a></li>
+      <li><a href="https://twitter.com/" title="Твиттер">Твиттер</a></li>
+      <li><a href="https://www.instagram.com/" title="Инстаграм">Инстаграм</a></li>
+      <li><a href="https://www.facebook.com/" title="Фейсбук">Фейсбук</a></li>
+      <li><a href="https://vk.com/" title="Вконтакте">Вконтакте</a></li>
     </ul>
     <div>
       <ul>
-        <li><a href="#">Логотип Сердца<b>Для поставщиков</b></a></li>
+        <li><a href="#" title="Логотип Сердечко">Логотип Сердца<b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве </a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
-    <div>
-      <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy"</a>
-        Сделано в
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2019
-      </p>
-    </div>
+    <p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">Логотип HTML Academy</a>
+      Сделано в
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <!-- Нужно ли HTML Academy обернуть для читалки в <span lang="en">?-->
+      &copy; 2020
+    </p>
   </footer>
 </body>
 

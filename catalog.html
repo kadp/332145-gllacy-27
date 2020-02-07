@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gllacy catalog</title>
+  <title>Сливочное мороженое</title>
 </head>
 
 <body>
   <header>
-    <a href="index.html">Логотип Глейси</a>
+    <a href="index.html" title="На главную Магазина Глейси">Логотип Глейси</a>
     <nav>
       <ul>
         <li><a href="catalog.html">Каталог</a></li>
@@ -18,11 +18,27 @@
       <ul>
         <li><a>Поиск</a></li>
         <li><a>Вход</a></li>
-        <li><a>2 товара</a></li>
+        <li>
+          <a>2 товара</a><!-- 1) либо через tr td, либо вложенными списками, но пока так-->
+          <p>
+            &#10006;<img src="./img/cream/creamy-with-orange-jam-and-citrus-shavings-small.jpg" width="33" height="33"
+              alt="Мороженое пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом 1,5 кг х <span>200 руб.</span>
+            300 руб.
+          </p>
+          <p>
+            &#10006;<img src="./img/cream/creamy-strawberry-with-white-chocolate-powder-small.jpg" width="33"
+              height="33" alt="Мороженое клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с
+            присыпкой из белого шоколада 1,5кг х <span>300 руб.</span> 450 руб.
+          </p>
+          <p>
+            <b>Итог: 750 руб.</b>
+          </p>
+          <button>Оформить заказ</button>
+        </li>
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+    <p><a href="tel:88124502525" title="Контактный номер телефона">8 812 450-25-25</a></p>
   </header>
   <main>
     <h1>Сливочное мороженное</h1>
@@ -36,13 +52,12 @@
       <!-- формы фильтрации -->
     </section>
     <section>
-      <h2>Ассортимент сливочного мороженного</h2>
+      <h2 class="visually-hidden">Ассортимент сливочного мороженного</h2>
       <ul>
         <li>
           <div>
-            <!-- На локальном проекте путь "./img", на сервере "/img" -->
             <img src="./img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
-              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>310 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </div>
@@ -50,7 +65,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
-              alt="Сливочно-кофейное с кусочками шоколада">
+              alt="Мороженое сливочно-кофейное с кусочками шоколада">
             <p>380 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </div>
@@ -58,7 +73,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
-              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
             <p>355 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </div>
@@ -66,7 +81,7 @@
         <li>
           <div>
             <img src="./img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
-              alt="Сливочное крем-брюле с карамельной подливкой">
+              alt="Мороженое сливочное крем-брюле с карамельной подливкой">
             <p>415 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
@@ -74,7 +89,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-with-lingonberry-jam.jpg" width="267" height="267"
-              alt="Сливочное с брусничным джемом">
+              alt="Мороженое сливочное с брусничным джемом">
             <p>325 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с брусничным джемом </a>
           </div>
@@ -82,7 +97,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-blueberry-with-whole-blueberries.jpg" width="267" height="267"
-              alt="Сливочно-черничное с цельными ягодами черники">
+              alt="Мороженое сливочно-черничное с цельными ягодами черники">
             <p>410 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
           </div>
@@ -90,7 +105,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-lemon-with-caramel-powder.jpg" width="267" height="267"
-              alt="Сливочно-лимонное с карамельной присыпкой">
+              alt="Мороженое сливочно-лимонное с карамельной присыпкой, зеленым, красными и желтыми крупиннками">
             <p>375 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
           </div>
@@ -98,7 +113,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-with-chocolate-chips.jpg" width="267" height="267"
-              alt="Сливочное с шоколадной стружкой">
+              alt="Мороженое сливочное с шоколадной стружкой">
             <p>320 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с шоколадной стружкой</a>
           </div>
@@ -106,7 +121,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-vanilla-with-pieces-of-chocolate.jpg" width="267" height="267"
-              alt="Сливочно-ванильное с кусочками шоколада">
+              alt="Мороженое сливочно-ванильное с кусочками шоколада">
             <p>440 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
           </div>
@@ -114,7 +129,7 @@
         <li>
           <div>
             <img src="./img/cream/creamy-menthol-syrup.jpg" width="267" height="267"
-              alt="Сливочноe с ментоловым сиропом">
+              alt="Мороженое сливочноe с ментоловым сиропом">
             <p>435 &#8381; <span>/кг</span></p>
             <a href="#">Сливочноe с ментоловым сиропом</a>
           </div>
@@ -122,14 +137,15 @@
         <li>
           <div>
             <img src="./img/cream/creamy-with-pieces-of-dark-chocolate.jpg" width="267" height="267"
-              alt="Сливочное с кусочками черного шоколада">
+              alt="Мороженое сливочное с кусочками черного шоколада">
             <p>355 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с кусочками черного шоколада</a>
           </div>
         </li>
         <li>
           <div>
-            <img src="./img/cream/creamy-mint-syrup.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+            <img src="./img/cream/creamy-mint-syrup.jpg" width="267" height="267"
+              alt="Мороженое сливочное с мятным сиропом">
             <p>420 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с мятным сиропом</a>
           </div>
@@ -148,27 +164,25 @@
   </main>
   <footer>
     <ul>
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Инстаграм</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Вконтакте</a></li>
+      <li><a href="https://twitter.com/" title="Твиттер">Твиттер</a></li>
+      <li><a href="https://www.instagram.com/" title="Инстаграм">Инстаграм</a></li>
+      <li><a href="https://www.facebook.com/" title="Фейсбук">Фейсбук</a></li>
+      <li><a href="https://vk.com/" title="Вконтакте">Вконтакте</a></li>
     </ul>
     <div>
       <ul>
-        <li><a href="#">Логотип Сердца<b>Для поставщиков</b></a></li>
+        <li><a href="#" title="Логотип Сердечко">Логотип Сердца<b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве </a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
-    <div>
-      <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy"</a>
-        Сделано в
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2019
-      </p>
-    </div>
+    <p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">Логотип HTML Academy</a>
+      Сделано в
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      &copy; 2020
+    </p>
   </footer>
 </body>
 
