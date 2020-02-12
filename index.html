@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <a title="Логотип Глейси">Логотип Глейси</a>
+    <a>Логотип Глейси</a>
     <nav>
       <ul>
         <li><a href="catalog.html">Каталог</a>
@@ -26,7 +26,7 @@
       </ul>
       <ul>
         <li>
-          <form action="https://echo.htmlacademy.ru" name="search" method="post">
+          <form action="https://echo.htmlacademy.ru" name="search" method="GET">
             <a>Поиск</a>
             <p>
               <label for="input-search" class="visually-hidden">Поиск по сайту</label>
@@ -35,7 +35,7 @@
           </form>
         </li>
         <li>
-          <form action="https://echo.htmlacademy.ru" name="authorization" method="post">
+          <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
             <a>Вход</a>
             <p>
               <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
@@ -47,8 +47,8 @@
             </p>
             <button type="submit">Войти</button>
           </form>
-          <a href="#" title="Забыли пароль?">Забыли пароль?</a>
-          <a href="#" title="Новая регистрация">Новая регистрация</a>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
         </li>
         <li>
           <a>Пустая корзина</a>
@@ -56,17 +56,12 @@
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525" title="Контактный номер телефона">8 812 450-25-25</a></p>
+    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
   </header>
   <main>
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <section>
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <ul>
-        <li><input type="radio" name="tabs" id="tab-1" checked></li>
-        <li><input type="radio" name="tabs" id="tab-2"></li>
-        <li><input type="radio" name="tabs" id="tab-3"></li>
-      </ul>
       <button type="button">Давайте оба!</button>
     </section>
     <section>
@@ -91,7 +86,7 @@
         <li>
           <div>
             Иконка Хит
-            <img src="./img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
+            <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
               alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>310 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -100,7 +95,7 @@
         <li>
           <div>
             Иконка Хит
-            <img src="./img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
+            <img src="img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
               alt="Мороженое сливочно-кофейное с кусочками шоколада">
             <p>380 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -109,7 +104,7 @@
         <li>
           <div>
             Иконка Хит
-            <img src="./img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
+            <img src="img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
               alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
             <p>355 &#8381; <span>/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
@@ -118,7 +113,7 @@
         <li>
           <div>
             Иконка Хит
-            <img src="./img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
+            <img src="img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
               alt="Мороженое сливочное крем-брюле с карамельной подливкой">
             <p>415 &#8381; <span>/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -131,7 +126,7 @@
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul>
         <li>
-          <p class="visually-hidden">Мороженно</p>
+          <p class="visually-hidden">Мороженое</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
             и проверенных временем технологий.</p>
         </li>
@@ -170,17 +165,17 @@
     <section>
       <h2 class="visually-hidden">Как добраться</h2>
       <!-- подключение карты, пока без JS -->
-      <img src="./img/map.png" width="1200" height="430"
+      <img src="img/map.png" width="1200" height="430"
         alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <ul>
         <li>
           <h3>Мы обязательно вам ответим!</h3>
         </li>
         <li>
-          <a>&#10006;<a>
+          <a>&#10006;</a>
         </li>
         <li>
-          <form action="https://echo.htmlacademy.ru" name="feedback" method="post">
+          <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
             <P>
               <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
               <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
@@ -201,10 +196,10 @@
   </main>
   <footer>
     <ul>
-      <li><a href="https://twitter.com/" title="Твиттер">Твиттер</a></li>
-      <li><a href="https://www.instagram.com/" title="Инстаграм">Инстаграм</a></li>
-      <li><a href="https://www.facebook.com/" title="Фейсбук">Фейсбук</a></li>
-      <li><a href="https://vk.com/" title="Вконтакте">Вконтакте</a></li>
+      <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
+      <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+      <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+      <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
     </ul>
     <div>
       <ul>
