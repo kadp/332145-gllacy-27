@@ -29,8 +29,10 @@
           <form action="https://echo.htmlacademy.ru" name="search" method="GET">
             <a>Поиск</a>
             <p>
-              <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-              <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
+              <div>
+                <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+                <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
+              </div>
             </p>
           </form>
         </li>
@@ -38,12 +40,16 @@
           <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
             <a>Вход</a>
             <p>
-              <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
-              <input id="user-login" type="email" name="login" placeholder="email@example.com">
+              <div>
+                <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
+                <input id="user-login" type="email" name="login" placeholder="email@example.com">
+              </div>
             </p>
             <p>
-              <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
-              <input id="user-password" type="password" name="password" placeholder="••••••••">
+              <div>
+                <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
+                <input id="user-password" type="password" name="password" placeholder="••••••••">
+              </div>
             </p>
             <button type="submit">Войти</button>
           </form>
@@ -157,8 +163,10 @@
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
-        <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
-        <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
+        <div>
+          <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
+          <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
+        </div>
         <button type="submit">Отправить</button>
       </form>
     </section>
@@ -169,8 +177,8 @@
         alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
       <p>Адрес главного офиса и офлайн-магазина:</p>
       <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
-      <p>Для заказов по телефону:<h3>8 812 450-25-25</h3>(с 10 до 20 ежедневно)</p>
-      <a></a>Форма обратной связи</a>
+      <p>Для заказов по телефону:<a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
+      <a>Форма обратной связи</a>
       <ul>
         <li>
           <h3>Мы обязательно вам ответим!</h3>
@@ -181,17 +189,23 @@
         <li>
           <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
             <P>
-              <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-              <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+              <div>
+                <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+                <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+              </div>
             </P>
             <p>
-              <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-              <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+              <div>
+                <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+                <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+              </div>
             </p>
             <p>
-              <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-              <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
-                rows="5"></textarea>
+              <div<>
+                <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+                <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
+                  rows="5"></textarea>
+                </div>
             </p>
             <button type="submit">Отправить</button>
           </form>
