@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <a>Логотип Глейси</a>
-    <nav>
-      <ul>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+      <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
           <ul>
             <li><a href="#">Новинки</a></li>
@@ -24,39 +26,14 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <ul>
-        <li>
-          <form action="https://echo.htmlacademy.ru" name="search" method="GET">
-            <a>Поиск</a>
-            <div>
-                <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-                <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
-            </div>
-          </form>
-        </li>
-        <li>
-          <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
-            <a>Вход</a>
-            <div>
-                <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
-                <input id="user-login" type="email" name="login" placeholder="email@example.com">
-            </div>
-            <div>
-                <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
-                <input id="user-password" type="password" name="password" placeholder="••••••••">
-            </div>
-            <button type="submit">Войти</button>
-          </form>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </li>
-        <li>
-          <a>Пустая корзина</a>
-        </li>
+      <ul class="user-navigation">
+        <li><a>Поиск</a></li>
+        <li><a>Вход</a></li>
+        <li><a>Пустая корзина</a></li>
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+    <p><a href="tel:88124502525" >8 812 450-25-25</a></p>
   </header>
   <main>
     <h1 class="visually-hidden">Магазин Глейси</h1>
@@ -121,38 +98,38 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="main-about">
       <h2 class="visually-hidden">Об магазине</h2>
-      <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-      <ul>
-        <li>
+      <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+      <ul class="main-about-list">
+        <li class="main-about-item">
           <p class="visually-hidden">Мороженое</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
             и проверенных временем технологий.</p>
         </li>
-        <li>
+        <li class="main-about-item">
           <p class="visually-hidden">Экологичность</p>
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
             дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li>
+        <li class="main-about-item">
           <p class="visually-hidden">Корова</p>
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.</p>
         </li>
-        <li>
+        <li class="main-about-item">
           <p class="visually-hidden">Термометр</p>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="main-blog">
       <h2 class="visually-hidden">Блог</h2>
       <p>Новое в нашем блоге</p>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      <a href="#"><h3>10 способов сервировки<br>фруктовых щербетов к<br> столу</h3></a>
     </section>
-    <section>
+    <section class="main-subscribe-email">
       <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -183,17 +160,17 @@
         <li>
           <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
             <div>
-                <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-                <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+              <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+              <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
             </div>
             <div>
-                <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-                <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+              <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+              <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
             </div>
             <div>
-                <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-                <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
-                  rows="5"></textarea>
+              <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+              <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
+                rows="5"></textarea>
             </div>
             <button type="submit">Отправить</button>
           </form>
@@ -223,6 +200,26 @@
       &copy; 2020
     </p>
   </footer>
+  <form action="https://echo.htmlacademy.ru" name="search" method="GET">
+    <div>
+      <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+      <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
+    </div>
+  </form>
+  <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
+    <div>
+      <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
+      <input id="user-login" type="email" name="login" placeholder="email@example.com">
+    </div>
+    <div>
+      <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
+      <input id="user-password" type="password" name="password" placeholder="••••••••">
+    </div>
+    <button type="submit">Войти</button>
+  </form>
+  <a href="#">Забыли пароль?</a>
+  <a href="#">Новая регистрация</a>
+
 </body>
 
 </html>

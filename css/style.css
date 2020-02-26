@@ -1,3 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #849d8f;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.main-header {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.main-navigation {}
+
+.site-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.main-about {
+  background-image: url(../img/wafer.jpg);
+}
+
+.main-about h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.main-about-list {
+  list-style: none;
+}
+
+.main-about-item {
+  text-align: left;
+}
+
+.main-blog {
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
+}
+.main-blog p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+
+}
+.main-blog h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+  text-align: left;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
