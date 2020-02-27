@@ -15,7 +15,7 @@
       <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a>
-          <ul>
+          <ul class="catalog-menu">
             <li><a href="#">Новинки</a></li>
             <li><a href="catalog.html">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -33,13 +33,13 @@
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525" >8 812 450-25-25</a></p>
+    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
   </header>
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <section>
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <button type="button">Давайте оба!</button>
+      <button class="button" type="button">Давайте оба!</button>
     </section>
     <section>
       <h2 class="visually-hidden">Акции</h2>
@@ -127,7 +127,9 @@
     <section class="main-blog">
       <h2 class="visually-hidden">Блог</h2>
       <p>Новое в нашем блоге</p>
-      <a href="#"><h3>10 способов сервировки<br>фруктовых щербетов к<br> столу</h3></a>
+      <a href="#">
+        <h3>10 способов сервировки<br>фруктовых щербетов к<br> столу</h3>
+      </a>
     </section>
     <section class="main-subscribe-email">
       <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
@@ -150,53 +152,29 @@
       <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
       <p>Для заказов по телефону:<a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
       <a>Форма обратной связи</a>
-      <ul>
-        <li>
-          <h3>Мы обязательно вам ответим!</h3>
-        </li>
-        <li>
-          <a>&#10006;</a>
-        </li>
-        <li>
-          <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
-            <div>
-              <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-              <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
-            </div>
-            <div>
-              <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-              <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
-            </div>
-            <div>
-              <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-              <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
-                rows="5"></textarea>
-            </div>
-            <button type="submit">Отправить</button>
-          </form>
-        </li>
-      </ul>
     </section>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
-      <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
-      <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
-      <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li class="twitter"><a href="#" aria-label="Твиттер"></a></li>
+      <li class="instagram"><a href="#" aria-label="Инстаграм"></a></li>
+      <li class="facebook"><a href="#" aria-label="Фейсбук"></a></li>
+      <li class="vk"><a href="#" aria-label="Вконтакте"></a></li>
     </ul>
     <div>
-      <ul>
-        <li><a href="#" title="Логотип Сердечко">Логотип Сердца<b>Для поставщиков</b></a></li>
+      <ul class="footer-info">
+        <li class="favorite"><a href="#"  title="Логотип Сердечко">Для поставщиков</a></li>
         <li><a href="#">О производстве </a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
     <p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">Логотип HTML Academy</a>
+      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
+    </p>
+    <p>
       Сделано в
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       &copy; 2020
     </p>
   </footer>
@@ -219,7 +197,31 @@
   </form>
   <a href="#">Забыли пароль?</a>
   <a href="#">Новая регистрация</a>
-
+  <ul>
+    <li>
+      <h3>Мы обязательно вам ответим!</h3>
+    </li>
+    <li>
+      <a>&#10006;</a>
+    </li>
+    <li>
+      <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
+        <div>
+          <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+          <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+        </div>
+        <div>
+          <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+        </div>
+        <div>
+          <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+          <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме" rows="5"></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </li>
+  </ul>
 </body>
 
 </html>

@@ -4,19 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси. Каталог мороженого.</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <a href="index.html" aria-label="На главную Магазина Глейси">Логотип Глейси</a>
-    <nav>
-      <ul>
-        <li><a href="catalog.html">Каталог</a></li>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="index.html" aria-label="На главную страницу Магазина Глейси"><img src="img/svg/logo.svg" width="154"
+          height="64" alt="Логотип магазина мороженого Глейси"></a>
+      <ul class="site-navigation">
+        <li><a href="catalog.html" class="current">Каталог</a>
+          <ul class="catalog-menu">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="catalog.html" class="current">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li><a>Поиск</a></li>
         <li><a>Вход</a></li>
         <li>
@@ -46,7 +57,7 @@
     <p>с 10 до 20, ежедневно</p>
     <p><a href="tel:88124502525">8 812 450-25-25</a></p>
   </header>
-  <main>
+  <main class="container">
     <h1>Сливочное мороженное</h1>
     <ul>
       <li><a href="index.html">Главная</a></li>
@@ -85,7 +96,7 @@
         <button type="submit">Применить</button>
       </form>
     </section>
-    <section>
+    <section class="catalog-assorti">
       <h2 class="visually-hidden">Ассортимент сливочного мороженного</h2>
       <ul>
         <li>
@@ -196,25 +207,27 @@
       </ul>
     </section>
   </main>
-  <footer>
-    <ul>
-      <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
-      <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
-      <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
-      <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li class="twitter"><a href="#" aria-label="Твиттер"></a></li>
+      <li class="instagram"><a href="#" aria-label="Инстаграм"></a></li>
+      <li class="facebook"><a href="#" aria-label="Фейсбук"></a></li>
+      <li class="vk"><a href="#" aria-label="Вконтакте"></a></li>
     </ul>
     <div>
-      <ul>
-        <li><a href="#" title="Логотип Сердечко">Логотип Сердца<b>Для поставщиков</b></a></li>
+      <ul class="footer-info">
+        <li class="favorite"><a href="#" title="Логотип Сердечко">Для поставщиков</a></li>
         <li><a href="#">О производстве </a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
     <p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">Логотип HTML Academy</a>
+      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
+    </p>
+    <p>
       Сделано в
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       &copy; 2020
     </p>
   </footer>
