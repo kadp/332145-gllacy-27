@@ -27,9 +27,9 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a>Поиск</a></li>
-        <li><a>Вход</a></li>
-        <li><a>Пустая корзина</a></li>
+        <li><a><img src="img/svg/loupe.svg" width="17" height="17" alt="Знак поиска"></a></li>
+        <li><a><img src="img/svg/entrance.svg" width="21" height="19" alt="Знак входа"> Вход</a></li>
+        <li><a><img src="img/svg/basket.svg" width="21" height="20" alt="Знак пустой корзины"> Пусто</a></li>
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
@@ -37,11 +37,11 @@
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин Глейси</h1>
-    <section>
+    <section class="main-backgrounds">
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <button class="button" type="button">Давайте оба!</button>
+      <button class="button main-button-two" type="button">Давайте оба!</button>
     </section>
-    <section>
+    <section class=main-banners>
       <h2 class="visually-hidden">Акции</h2>
       <ul>
         <li>
@@ -57,7 +57,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="main-hit">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul>
         <li>
@@ -65,7 +65,7 @@
             Иконка Хит
             <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
               alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p>310 &#8381; <span>/кг</span></p>
+            <p class="price">310 &#8381;<span class="price-weight">/кг</span></p>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </div>
         </li>
@@ -74,7 +74,7 @@
             Иконка Хит
             <img src="img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
               alt="Мороженое сливочно-кофейное с кусочками шоколада">
-            <p>380 &#8381; <span>/кг</span></p>
+            <p class="price">380 &#8381;<span class="price-weight">/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </div>
         </li>
@@ -83,7 +83,7 @@
             Иконка Хит
             <img src="img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
               alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
-            <p>355 &#8381; <span>/кг</span></p>
+            <p class="price">355 &#8381;<span class="price-weight">/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </div>
         </li>
@@ -92,7 +92,7 @@
             Иконка Хит
             <img src="img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
               alt="Мороженое сливочное крем-брюле с карамельной подливкой">
-            <p>415 &#8381; <span>/кг</span></p>
+            <p class="price">415 &#8381;<span class="price-weight">/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </div>
         </li>
@@ -127,9 +127,7 @@
     <section class="main-blog">
       <h2 class="visually-hidden">Блог</h2>
       <p>Новое в нашем блоге</p>
-      <a href="#">
-        <h3>10 способов сервировки<br>фруктовых щербетов к<br> столу</h3>
-      </a>
+      <a href="#">10 способов сервировки<br>фруктовых щербетов к<br> столу</a>
     </section>
     <section class="main-subscribe-email">
       <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
@@ -140,7 +138,7 @@
           <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
           <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
         </div>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
     <section>
@@ -163,7 +161,7 @@
     </ul>
     <div>
       <ul class="footer-info">
-        <li class="favorite"><a href="#"  title="Логотип Сердечко">Для поставщиков</a></li>
+        <li class="favorite"><a href="#" title="Логотип Сердечко">Для поставщиков</a></li>
         <li><a href="#">О производстве </a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
@@ -178,50 +176,54 @@
       &copy; 2020
     </p>
   </footer>
-  <form action="https://echo.htmlacademy.ru" name="search" method="GET">
-    <div>
-      <label for="input-search" class="visually-hidden">Поиск по сайту</label>
-      <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
-    </div>
-  </form>
-  <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
-    <div>
-      <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
-      <input id="user-login" type="email" name="login" placeholder="email@example.com">
-    </div>
-    <div>
-      <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
-      <input id="user-password" type="password" name="password" placeholder="••••••••">
-    </div>
-    <button type="submit">Войти</button>
-  </form>
-  <a href="#">Забыли пароль?</a>
-  <a href="#">Новая регистрация</a>
-  <ul>
-    <li>
-      <h3>Мы обязательно вам ответим!</h3>
-    </li>
-    <li>
-      <a>&#10006;</a>
-    </li>
-    <li>
-      <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
-        <div>
-          <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-          <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
-        </div>
-        <div>
-          <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-          <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
-        </div>
-        <div>
-          <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-          <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме" rows="5"></textarea>
-        </div>
-        <button type="submit">Отправить</button>
-      </form>
-    </li>
-  </ul>
+  <section class="modal search">
+    <form action="https://echo.htmlacademy.ru" name="search" method="GET">
+      <div>
+        <label for="input-search" class="visually-hidden">Поиск по сайту</label>
+        <input id="input-search" type="search" name="search" placeholder="Крем-брюле">
+      </div>
+    </form>
+  </section>
+  <section class="modal login-form">
+    <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
+      <div>
+        <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
+        <input id="user-login" type="email" name="login" placeholder="email@example.com">
+      </div>
+      <div>
+        <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
+        <input id="user-password" type="password" name="password" placeholder="••••••••">
+      </div>
+      <button class="button" type="submit">Войти</button>
+    </form>
+    <a href="#" class="recovery">Забыли пароль?</a>
+    <a href="#" class="recovery">Новая регистрация</a>
+  </section>
+  <section class="modal feedback">
+    <ul>
+      <li>
+        <h3>Мы обязательно вам ответим!<a>&#10006;</a></h3>
+      </li>
+      <li>
+        <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
+          <div>
+            <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+            <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+            <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+          </div>
+          <div>
+            <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+            <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
+              rows="5"></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </li>
+    </ul>
+  </section>
 </body>
 
 </html>
