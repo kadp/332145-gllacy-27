@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси. Каталог мороженого.</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,7 +15,7 @@
           height="64" alt="Логотип магазина мороженого Глейси"></a>
       <ul class="site-navigation">
         <li><a href="catalog.html" class="current">Каталог</a>
-          <ul class="catalog-menu">
+          <ul class="catalog-menu list-style-reset">
             <li><a href="#">Новинки</a></li>
             <li><a href="catalog.html" class="current">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
@@ -28,10 +27,10 @@
         <li><a href="#">О Компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><a><img src="img/svg/loupe.svg" width="17" height="17" alt="Знак поиска"></a></li>
-        <li><a><img src="img/svg/entrance.svg" width="21" height="19" alt="Знак входа"> Вход</a></li>
-        <li>
-          <a><img src="img/svg/basket-red.svg" width="21" height="20" alt="Знак корзины с товарами"> 2 товара</a>
+        <li class="loupe"><a>Лупа</a></li>
+        <li class="entrance"><a>Вход</a></li>
+        <li class="basket-red">
+          <a>2 товара</a>
           <table>
             <tr>
               <td>&#10006;</td>
@@ -59,13 +58,13 @@
   </header>
   <main class="container">
     <h1>Сливочное мороженное</h1>
-    <ul>
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="catalog.html">Сливочное</a></li>
+    <ul class="list-style-reset bread">
+      <li><a href="index.html">Главная &raquo;</a></li>
+      <li><a href="#">Каталог &raquo;</a></li>
+      <li class="current-bread"><a href="catalog.html">Сливочное</a></li>
     </ul>
-    <section>
-      <h2>Фильтр выбора мороженого</h2>
+    <section class="catalog-sort">
+      <h2 class="visually-hidden">Фильтр выбора мороженого</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <div>
           <label for="sort">Сортировка:</label>
@@ -77,14 +76,14 @@
           <label for="price">Цена: 100 руб. - 500 руб.</label>
           <input type="range" id="price" name="price" min="0" max="1000" step="1">
         </div>
-        <div>
+        <div class="catalog-fat">
           <h3>Жирность:</h3>
-          <label><input type="radio" name="fat" value="0">0%</label>
+          <label><input  type="radio" name="fat" value="0">0%</label>
           <label><input type="radio" name="fat" value="to10" checked>до 10%</label>
           <label><input type="radio" name="fat" value="to30">до 30%</label>
           <label><input type="radio" name="fat" value="up30">Выше 30%</label>
         </div>
-        <div>
+        <div class="catalog-fillers">
           <h3>Наполнители:</h3>
           <label><input type="checkbox" name="fillers" value="chocolate" checked
               id="checkbox-chocolate">шоколадные</label>
@@ -93,12 +92,12 @@
           <label><input type="checkbox" name="fillers" value="syrop">сиропы</label>
           <label><input type="checkbox" name="fillers" value="jame">джемы</label>
         </div>
-        <button type="submit">Применить</button>
+        <button class="sort-button" type="submit">Применить</button>
       </form>
     </section>
     <section class="catalog-assorti">
       <h2 class="visually-hidden">Ассортимент сливочного мороженного</h2>
-      <ul>
+      <ul class="list-style-reset">
         <li>
           <div>
             <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
@@ -196,14 +195,14 @@
           </div>
         </li>
       </ul>
-      <ul>
-        <li><a>Влево</a></li>
-        <li><a>1</a></li>
+      <ul class="list-style-reset bread-bottom">
+        <li>&#60;</li>
+        <li class="bread-bottom-current"><a>1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li><a href="#">4</a></li>
         <li><a href="#">5</a></li>
-        <li><a href="#">Вправо</a></li>
+        <li><a href="#">&#62;</a></li>
       </ul>
     </section>
   </main>

@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Глейси</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -13,7 +12,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-      <ul class="site-navigation">
+      <ul class="site-navigation list-style-reset">
         <li><a href="catalog.html">Каталог</a>
           <ul class="catalog-menu">
             <li><a href="#">Новинки</a></li>
@@ -26,10 +25,10 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li><a><img src="img/svg/loupe.svg" width="17" height="17" alt="Знак поиска"></a></li>
-        <li><a><img src="img/svg/entrance.svg" width="21" height="19" alt="Знак входа"> Вход</a></li>
-        <li><a><img src="img/svg/basket.svg" width="21" height="20" alt="Знак пустой корзины"> Пусто</a></li>
+      <ul class="user-navigation list-style-reset">
+        <li class="loupe"><a>Лупа</a></li>
+        <li class="entrance"><a>Вход</a></li>
+        <li class="basket"></a></li>
       </ul>
     </nav>
     <p>с 10 до 20, ежедневно</p>
@@ -40,6 +39,10 @@
     <section class="main-backgrounds">
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
       <button class="button main-button-two" type="button">Давайте оба!</button>
+      <button class="button-bg change-bg" type="button"></button>
+      <button class="change-bg" type="button"></button>
+      <button class="change-bg" type="button"></button>
+      </button>
     </section>
     <section class=main-banners>
       <h2 class="visually-hidden">Акции</h2>
@@ -101,7 +104,7 @@
     <section class="main-about">
       <h2 class="visually-hidden">Об магазине</h2>
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-      <ul class="main-about-list">
+      <ul class="list-style-reset">
         <li class="main-about-item">
           <p class="visually-hidden">Мороженое</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
@@ -146,14 +149,18 @@
       <!-- подключение карты, пока без JS -->
       <img src="img/map.png" width="1200" height="430"
         alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-      <p>Адрес главного офиса и офлайн-магазина:</p>
-      <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
-      <p>Для заказов по телефону:<a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)</p>
-      <a>Форма обратной связи</a>
+      <div class="main-contact">
+        <p>Адрес главного офиса и офлайн-магазина:</p>
+        <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
+        <p>Для заказов по телефону:</p>
+        <a class="tel" href="tel:88124502525">8 812 450-25-25</a>
+        <p class="time">(с 10 до 20 ежедневно)</p>
+        <a class="button">Форма обратной связи</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <ul class="footer-social">
+    <ul class="footer-social list-style-reset">
       <li class="twitter"><a href="#" aria-label="Твиттер"></a></li>
       <li class="instagram"><a href="#" aria-label="Инстаграм"></a></li>
       <li class="facebook"><a href="#" aria-label="Фейсбук"></a></li>
@@ -177,6 +184,7 @@
     </p>
   </footer>
   <section class="modal search">
+    <h2 class="visually-hidden">Поиск по сайту</h2>
     <form action="https://echo.htmlacademy.ru" name="search" method="GET">
       <div>
         <label for="input-search" class="visually-hidden">Поиск по сайту</label>
@@ -185,6 +193,7 @@
     </form>
   </section>
   <section class="modal login-form">
+    <h2 class="visually-hidden">Окно авторизации в магазине Глейси</h2>
     <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
       <div>
         <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
@@ -200,7 +209,8 @@
     <a href="#" class="recovery">Новая регистрация</a>
   </section>
   <section class="modal feedback">
-    <ul>
+    <h2 class="visually-hidden">Форма заполнения для обратной связи</h2>
+    <ul class="list-style-reset">
       <li>
         <h3>Мы обязательно вам ответим!<a>&#10006;</a></h3>
       </li>

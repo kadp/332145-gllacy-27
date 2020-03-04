@@ -21,6 +21,30 @@ html {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('/fonts/roboto.woff') format('woff'),
+    url('/fonts/roboto.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('/fonts/robotomedium.woff') format('woff'),
+    url('/fonts/robotomedium.woff2') format('woff2');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url('/fonts/robotobold.woff') format('woff'),
+    url('/fonts/robotobold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -74,10 +98,20 @@ html {
   color: #ffffff;
 }
 
-.site-navigation,
-.user-navigation,
-.catalog-menu {
-  list-style: none;
+.loupe {
+  list-style-image: url(../img/svg/loupe.svg);
+}
+
+.entrance {
+  list-style-image: url(../img/svg/entrance.svg);
+}
+
+.basket {
+  list-style-image: url(../img/svg/basket.svg);
+}
+
+.basket-red {
+  list-style-image: url(../img/svg/basket-red.svg);
 }
 
 .site-navigation a:hover,
@@ -102,6 +136,7 @@ html {
   background-color: #d07058;
   padding: 5px;
 }
+
 .container a:hover,
 .container a:focus,
 .main-footer a:hover,
@@ -110,16 +145,63 @@ html {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  border-bottom-color: rgba(255,188,158, 0.5);
+  border-bottom-color: rgba(255, 188, 158, 0.5);
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
+.bread {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.bread li,
+.bread-bottom li {
+  display: inline;
+}
+
+.current {
+  background-color: #d07058;
+  padding: 5px;
+}
+
+
+.main-backgrounds {
+  background-image: url(../img/cream/creme-brulee-and-ice-cream-with-raspberry-jam.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 582px;
+}
+
 .main-backgrounds h2 {
   font-size: 60px;
-  line-height: 60.35px;
+  line-height: 60px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.background-second {
+  background-image: url(../img/cream/chocolate-sundae-and-lemon-sorbet.png);
+}
+
+.background-third {
+  background-image: url(../img/cream/ice-cream-with-fondant-and-strawberry-sorbet.png);
+}
+
+.change-bg {
+  width: 21px;
+  height: 21px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 50%;
+  background-color: #849d8f;
+}
+
+.button-bg {
+  background-color: #ffffff;
 }
 
 .main-banners h2 {
@@ -127,7 +209,6 @@ html {
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
-
 }
 
 .main-banners ul {
@@ -139,7 +220,6 @@ html {
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
-
 }
 
 .main-banners a {
@@ -165,7 +245,7 @@ html {
   color: #323232;
 }
 
-.main-about-list {
+.list-style-reset {
   list-style: none;
 }
 
@@ -237,15 +317,46 @@ html {
   box-sizing: border-box;
 }
 
+.main-contact {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.main-contact a {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.main-contact h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.tel {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .main-footer {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
-}
-
-.main-footer ul {
-  list-style: none;
 }
 
 .footer-social {
@@ -268,21 +379,60 @@ html {
   list-style-image: url(../img/svg/vk.svg);
 }
 
+
 .footer-info a,
 .footer-link-html-academy,
 .main-hit a,
-.catalog-assorti a {
+.catalog-assorti a,
+.bread a {
   border-bottom-color: rgba(254, 254, 254, 0.5);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   color: #ffffff;
 }
 
+.current-bread a,
+.bread-bottom a {
+  border: none;
+}
+
+.bread-bottom {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bread-bottom-current a {
+  text-align: center;
+  display: inline-block;
+  width: 27px;
+  height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+  line-height: 26px;
+}
+
+.catalog-sort {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.catalog-fillers,
+.sort-button,
+.catalog-fat {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
 .favorite {
   font-weight: 700;
   list-style-image: url(../img/svg/heart.svg);
 }
-
 
 .footer-link-html-academy-logo {
   display: block;
@@ -300,10 +450,6 @@ html {
 .current {
   background-color: #d07058;
   padding: 5px;
-}
-
-.catalog-assorti ul {
-  list-style: none;
 }
 
 .catalog-assorti {
@@ -345,10 +491,6 @@ html {
   line-height: 28px;
   font-weight: 400;
   color: #323232;
-}
-
-.feedback ul {
-  list-style: none;
 }
 
 .feedback input,
@@ -427,6 +569,7 @@ html {
   font-size: 14px;
   line-height: 24px;
 }
+
 .recovery {
   font-size: 13px;
   line-height: 24px;
@@ -437,6 +580,7 @@ html {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
