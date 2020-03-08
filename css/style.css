@@ -78,6 +78,25 @@ html {
   line-height: 16px;
   font-weight: 700;
   color: #ffffff;
+  display: flex;
+  width: 1146px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.site-user-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.time-and-tel {
+  align-self: flex-end;
+  text-align: right;
 }
 
 .main-header a {
@@ -89,6 +108,8 @@ html {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  display: flex;
+  padding-left: 10px;
 }
 
 .user-navigation {
@@ -96,6 +117,7 @@ html {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
 }
 
 .loupe {
@@ -173,6 +195,9 @@ html {
   background-position: center;
   text-align: center;
   height: 582px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 .main-backgrounds h2 {
@@ -180,6 +205,21 @@ html {
   line-height: 60px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.wrap-bt-two {
+  display: flex;
+  align-self: center;
+}
+
+.wrap-bt-radio {
+  display: flex;
+  align-self: center;
+}
+
+.wrap-both {
+  display: flex;
+  margin-top: auto;
 }
 
 .background-second {
@@ -204,15 +244,30 @@ html {
   background-color: #ffffff;
 }
 
+.list-main-banners {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.banners-list-item:nth-child(1) {
+  width: 560px;
+  background-image: url("../img/raspberry.jpg");
+  background-repeat: no-repeat;
+}
+
+.banners-list-item:nth-child(2) {
+  width: 560px;
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+}
+
 .main-banners h2 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
   color: #ffffff;
-}
-
-.main-banners ul {
-  list-style: none;
+  display: block;
 }
 
 .main-banners p {
@@ -224,18 +279,42 @@ html {
 
 .main-banners a {
   font-size: 18px;
-  line-height: 242px;
+  line-height: 24px;
   font-weight: 700;
   color: #ffffff;
   background-color: #e84d37;
 }
 
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
 .main-hit {
   color: #ffffff;
+  text-align: center;
+}
+
+.main-hit p {
+  text-align: left;
+}
+
+.list-main-hit {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.list-main-hit li {
+  width: 267px;
 }
 
 .main-about {
   background-image: url(../img/wafer.jpg);
+  padding: 20px;
 }
 
 .main-about h3 {
@@ -250,13 +329,15 @@ html {
 }
 
 .main-about-item {
-  text-align: left;
+  width: 475px;
 }
 
 .main-blog {
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
   background-position: left center;
+  padding: 20px;
+  width: 560px;
 }
 
 .main-blog p {
@@ -264,7 +345,7 @@ html {
   line-height: 22px;
   font-weight: 400;
   color: #323232;
-
+  margin-bottom: 0;
 }
 
 .main-blog a {
@@ -274,6 +355,12 @@ html {
   font-weight: 700;
   color: #323232;
   text-align: left;
+  margin-bottom: 85px;
+  display: block;
+}
+
+.main-subscribe-bg {
+  background-repeat: no-repeat;
 }
 
 .main-subscribe-email {
@@ -281,8 +368,18 @@ html {
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
+  background-color: #f8f7f4;
   background-image: url(../img/svg/bg-post.svg);
   background-repeat: no-repeat;
+  display: flex;
+  width: 560px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.crutch {
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-subscribe-email p {
@@ -325,6 +422,8 @@ html {
   text-align: left;
   border-radius: 5px;
   background-color: #ffffff;
+  width: 300px;
+  padding: 25px;
 }
 
 .main-contact a {
@@ -357,10 +456,19 @@ html {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
+  width: 1146px;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  align-content: center;
 }
 
 .footer-social {
   opacity: 0.5;
+  display: flex;
+  min-width: 190px;
+  justify-content: space-around;
 }
 
 .twitter {
@@ -385,10 +493,26 @@ html {
 .main-hit a,
 .catalog-assorti a,
 .bread a {
-  border-bottom-color: rgba(254, 254, 254, 0.5);
+  border-bottom-color: rgba(99, 77, 77, 0.5);
   border-bottom-width: 1px;
   border-bottom-style: solid;
   color: #ffffff;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.wrap-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap-footer-info {
+  display: flex;
+  justify-content: center;
 }
 
 .current-bread a,
@@ -401,6 +525,7 @@ html {
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+  float: right;
 }
 
 .bread-bottom-current a {
@@ -419,8 +544,12 @@ html {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  display: flex;
+  flex-direction: colum;
 }
-
+.wrap-sort{
+  display: flex;
+}
 .catalog-fillers,
 .sort-button,
 .catalog-fat {
@@ -459,6 +588,17 @@ html {
   color: #ffffff;
 }
 
+.list-assorti {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-assorti li {
+  width: 267px;
+}
+
 
 .price {
   font-size: 45px;
@@ -469,6 +609,15 @@ html {
 .price-weight {
   font-size: 30px;
   line-height: 45px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1146px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .container h1 {
@@ -493,6 +642,23 @@ html {
   color: #323232;
 }
 
+.feedback {
+  padding: 24px;
+  width: 478px;
+}
+
+.feedback button {
+  align-self: flex-start;
+}
+
+.feedback-list {
+  padding: 0;
+}
+
+.right {
+  float: right;
+}
+
 .feedback input,
 .feedback textarea {
   font-size: 16px;
@@ -504,6 +670,16 @@ html {
   background-color: #ffffff;
   border: solid 1px rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
+}
+
+.feedback input {
+  width: 267px;
+  border-radius: 5px;
+}
+
+.feedback textarea {
+  width: 428px;
+  border-radius: 5px;
 }
 
 .feedback input:focus,
@@ -524,6 +700,16 @@ html {
   color: #999999;
 }
 
+.login-form {
+  width: 277px;
+  border-radius: 5px;
+  padding: 19px;
+}
+
+.login-form a {
+  float: right;
+}
+
 .login-form input[type="email"],
 .login-form input[type="password"] {
   font-size: 16px;
@@ -533,6 +719,8 @@ html {
   text-align: left;
   border-radius: 5px;
   background-color: #ffffff;
+  width: 241px;
+  border-radius: 5px;
 }
 
 .login-form input[type="email"]::placeholder,
@@ -553,6 +741,12 @@ html {
   box-sizing: border-box;
 }
 
+.search {
+  width: 341px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
 .search input {
   font-size: 16px;
   line-height: 24px;
@@ -561,6 +755,7 @@ html {
   text-align: left;
   border-radius: 5px;
   background-color: #ffffff;
+  width: 311px;
 }
 
 .search input::placeholder {

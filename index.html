@@ -12,47 +12,57 @@
   <header class="main-header">
     <nav class="main-navigation">
       <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-      <ul class="site-navigation list-style-reset">
-        <li><a href="catalog.html">Каталог</a>
-          <ul class="catalog-menu">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="catalog.html">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
-      </ul>
-      <ul class="user-navigation list-style-reset">
-        <li class="loupe"><a>Лупа</a></li>
-        <li class="entrance"><a>Вход</a></li>
-        <li class="basket"></a></li>
-      </ul>
+      <div class="site-user-wrap">
+        <ul class="site-navigation list-style-reset">
+          <li><a href="catalog.html">Каталог</a>
+            <!-- Отключил до 7 задания.
+                  <ul class="catalog-menu">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul> -->
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
+        <ul class="user-navigation list-style-reset">
+          <li class="loupe"><a></a></li>
+          <li class="entrance"><a>Вход</a></li>
+          <li class="basket"></a>Пусто</li>
+        </ul>
+      </div>
     </nav>
-    <p>с 10 до 20, ежедневно</p>
-    <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+    <div class="time-and-tel">
+      <p>с 10 до 20, ежедневно</p>
+      <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+    </div>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин Глейси</h1>
     <section class="main-backgrounds">
       <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      <button class="button main-button-two" type="button">Давайте оба!</button>
-      <button class="button-bg change-bg" type="button"></button>
-      <button class="change-bg" type="button"></button>
-      <button class="change-bg" type="button"></button>
-      </button>
+      <div class="wrap-both">
+        <div class="wrap-bt-radio">
+          <button class="button-bg change-bg" type="button"></button>
+          <button class="change-bg" type="button"></button>
+          <button class="change-bg" type="button"></button>
+        </div>
+        <div class="wrap-bt-two">
+          <button class="button main-button-two" type="button">Давайте оба!</button>
+        </div>
+      </div>
     </section>
-    <section class=main-banners>
+    <section class="main-banners">
       <h2 class="visually-hidden">Акции</h2>
-      <ul>
-        <li>
+      <ul class="list-style-reset list-main-banners">
+        <li class="banners-list-item">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a href="#">Хочу варенье!</a>
         </li>
-        <li>
+        <li class="banners-list-item">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
             бесплатно.</p>
@@ -62,7 +72,7 @@
     </section>
     <section class="main-hit">
       <h2 class="visually-hidden">Хиты продаж</h2>
-      <ul>
+      <ul class="list-style-reset list-main-hit">
         <li>
           <div>
             Иконка Хит
@@ -104,7 +114,7 @@
     <section class="main-about">
       <h2 class="visually-hidden">Об магазине</h2>
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-      <ul class="list-style-reset">
+      <ul class="list-style-reset about-list">
         <li class="main-about-item">
           <p class="visually-hidden">Мороженое</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
@@ -127,22 +137,24 @@
         </li>
       </ul>
     </section>
-    <section class="main-blog">
-      <h2 class="visually-hidden">Блог</h2>
-      <p>Новое в нашем блоге</p>
-      <a href="#">10 способов сервировки<br>фруктовых щербетов к<br> столу</a>
-    </section>
-    <section class="main-subscribe-email">
-      <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
-        <div>
-          <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
-          <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
-        </div>
-        <button class="button" type="submit">Отправить</button>
-      </form>
+    <section class="crutch">
+      <section class="main-blog">
+        <h2 class="visually-hidden">Блог</h2>
+        <p>Новое в нашем блоге</p>
+        <a href="#">10 способов сервировки<br>фруктовых щербетов к<br> столу</a>
+      </section>
+      <section class="main-subscribe-email">
+        <h2 class="visually-hidden">Подписка на почтовую рассылку</h2>
+        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
+          <div>
+            <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
+            <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
     </section>
     <section>
       <h2 class="visually-hidden">Как добраться</h2>
@@ -166,22 +178,27 @@
       <li class="facebook"><a href="#" aria-label="Фейсбук"></a></li>
       <li class="vk"><a href="#" aria-label="Вконтакте"></a></li>
     </ul>
-    <div>
-      <ul class="footer-info">
+    <div class="wrap-footer-info">
+      <ul class="list-style-reset footer-info">
         <li class="favorite"><a href="#" title="Логотип Сердечко">Для поставщиков</a></li>
         <li><a href="#">О производстве </a></li>
+      </ul>
+      <ul class="list-style-reset footer-info">
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </div>
-    <p>
-      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
-    </p>
-    <p>
-      Сделано в
-      <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      &copy; 2020
-    </p>
+    <div class="wrap-copyright">
+      <p>
+        <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"
+          title="HTML Academy"></a>
+      </p>
+      <p>
+        Сделано в
+        <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        &copy; 2020
+      </p>
+    </div>
   </footer>
   <section class="modal search">
     <h2 class="visually-hidden">Поиск по сайту</h2>
@@ -210,7 +227,7 @@
   </section>
   <section class="modal feedback">
     <h2 class="visually-hidden">Форма заполнения для обратной связи</h2>
-    <ul class="list-style-reset">
+    <ul class="list-style-reset feedback-list">
       <li>
         <h3>Мы обязательно вам ответим!<a>&#10006;</a></h3>
       </li>
@@ -229,7 +246,7 @@
             <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
               rows="5"></textarea>
           </div>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button right" type="submit">Отправить</button>
         </form>
       </li>
     </ul>
