@@ -545,11 +545,31 @@ html {
   font-weight: 400;
   color: #ffffff;
   display: flex;
-  flex-direction: colum;
 }
+
+.form-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
 .wrap-sort{
   display: flex;
+  flex-direction: column;
 }
+.wrap-price{
+  display: flex;
+  flex-direction: column;
+}
+.wrap-fat{
+  display: flex;
+  flex-direction: column;
+}
+.wrap-fillers{
+  display: flex;
+  flex-direction: row;
+}
+*/
 .catalog-fillers,
 .sort-button,
 .catalog-fat {

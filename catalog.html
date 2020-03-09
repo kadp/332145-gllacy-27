@@ -73,25 +73,25 @@
     <h1>Сливочное мороженное</h1>
     <section class="catalog-sort">
       <h2 class="visually-hidden">Фильтр выбора мороженого</h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="form-wrap" action="https://echo.htmlacademy.ru/courses" method="post">
         <div class="wrap-sort">
           <label for="sort">Сортировка:</label>
           <select id="sort" name="sort">
             <option value="popular">по популярности</option>
           </select>
         </div>
-        <div>
+        <div class="wrap-price">
           <label for="price">Цена: 100 руб. - 500 руб.</label>
           <input type="range" id="price" name="price" min="0" max="1000" step="1">
         </div>
-        <div class="catalog-fat">
+        <div class="catalog-fat wrap-fat">
           <h3>Жирность:</h3>
           <label><input type="radio" name="fat" value="0">0%</label>
           <label><input type="radio" name="fat" value="to10" checked>до 10%</label>
           <label><input type="radio" name="fat" value="to30">до 30%</label>
           <label><input type="radio" name="fat" value="up30">Выше 30%</label>
         </div>
-        <div class="catalog-fillers">
+        <div class="catalog-fillers wrap-fillers">
           <h3>Наполнители:</h3>
           <label><input type="checkbox" name="fillers" value="chocolate" checked
               id="checkbox-chocolate">шоколадные</label>
