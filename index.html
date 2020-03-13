@@ -27,13 +27,14 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation list-style-reset">
-          <li class="loupe"><a><svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17"
-                height="17" viewBox="0 0 17 17">
+          <li><a class="loupe" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
                 <path fill="#fff"
                   d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" />
-              </svg></a></li>
-          <li class="entrance"><a>Вход</a></li>
-          <li class="basket">Пусто</li>
+                </svg>
+            </a></li>
+          <li><a class="entrance" href="#">Вход</a></li>
+          <li><a class="basket" href="#">Пусто</a></li>
         </ul>
       </div>
     </nav>
@@ -117,23 +118,23 @@
     <section class="main-about">
       <h2 class="visually-hidden">Об магазине</h2>
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-      <ul class="list-style-reset about-list">
-        <li class="main-about-item">
+      <ul class="about-list list-style-reset">
+        <li>
           <p class="visually-hidden">Мороженое</p>
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
             и проверенных временем технологий.</p>
         </li>
-        <li class="main-about-item">
+        <li>
           <p class="visually-hidden">Экологичность</p>
           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
             дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
         </li>
-        <li class="main-about-item">
+        <li>
           <p class="visually-hidden">Корова</p>
           <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
             связывает долговременное сотрудничество.</p>
         </li>
-        <li class="main-about-item">
+        <li>
           <p class="visually-hidden">Термометр</p>
           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
             растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -151,19 +152,20 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" name="subscribe" method="post">
-          <div>
-            <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
-            <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
+          <label for="subscribe-email" class="visually-hidden">Поле ввода почты для подписки на рассылку</label>
+          <input id="subscribe-email" type="email" name="subscribe-email" placeholder="email@example.com">
           </div>
           <button class="button" type="submit">Отправить</button>
         </form>
+        </div>
       </section>
     </section>
-    <section>
+    <section class="main-map">
       <h2 class="visually-hidden">Как добраться</h2>
       <!-- подключение карты, пока без JS -->
       <img src="img/map.png" width="1200" height="430"
         alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <div class="pin"></div>
       <div class="main-contact">
         <p>Адрес главного офиса и офлайн-магазина:</p>
         <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
@@ -192,15 +194,10 @@
       </ul>
     </div>
     <div class="wrap-copyright">
-      <p>
-        <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"
-          title="HTML Academy"></a>
-      </p>
-      <p>
-        Сделано в
-        <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2020
-      </p>
+      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
+      Сделано в
+      <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      &copy; 2020
     </div>
   </footer>
   <section class="modal search">
