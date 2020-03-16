@@ -178,6 +178,7 @@
         <a class="button">Форма обратной связи</a>
       </div>
     </section>
+
   </main>
   <footer class="main-footer">
     <ul class="footer-social list-style-reset">
@@ -254,32 +255,31 @@
     <a href="#" class="recovery">Забыли пароль?</a>
     <a href="#" class="recovery">Новая регистрация</a>
   </section>
-  <section class="modal feedback">
+  <section class="feedback">
     <h2 class="visually-hidden">Форма заполнения для обратной связи</h2>
-    <ul class="list-style-reset feedback-list">
-      <li>
-        <h3>Мы обязательно вам ответим!<a>&#10006;</a></h3>
-      </li>
-      <li>
-        <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
-          <div>
-            <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-            <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
-          </div>
-          <div>
-            <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-            <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
-          </div>
-          <div>
-            <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-            <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"
-              rows="5"></textarea>
-          </div>
-          <button class="button right" type="submit">Отправить</button>
-        </form>
-      </li>
-    </ul>
+    <h3>Мы обязательно вам ответим!</h3>
+    <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
+      <div class="feedback-name">
+        <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+        <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+      </div>
+      <div class="feedback-email">
+        <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+        <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+      </div>
+      <div class="feedback-textarea">
+        <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+        <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"></textarea>
+      </div>
+      <div class="wrap-feedback-bt">
+        <button class="button feedback-bt" type="submit">Отправить</button>
+      </div>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </form>
   </section>
+  
 </body>
 
 </html>
