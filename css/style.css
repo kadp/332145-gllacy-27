@@ -66,6 +66,7 @@ html {
   border: none;
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
+
 .feedback-bt {
   width: 139px;
   height: 44px;
@@ -386,6 +387,8 @@ html {
   font-weight: 700;
   color: #ffffff;
   display: block;
+  padding: 0;
+  margin: 23px 20px;
 }
 
 .main-banners p {
@@ -393,6 +396,9 @@ html {
   line-height: 22px;
   font-weight: 700;
   color: #ffffff;
+  text-align: left;
+  padding: 0;
+  margin: 28px 0px 0px 20px;
 }
 
 .main-banners a {
@@ -400,7 +406,13 @@ html {
   line-height: 24px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #e84d37;
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  margin: 25px 0px 9px 0px;
+  padding: 14px 23px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .about-list {
@@ -411,13 +423,30 @@ html {
   justify-content: space-around;
 }
 
+.hit::before {
+  content: "";
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/svg/hit.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .main-hit {
   color: #ffffff;
   text-align: center;
 }
 
+.main-hit img {
+  border-radius: 50%;
+}
+
 .main-hit p {
   text-align: left;
+  padding: 0;
+  margin: 0;
+  margin-top: -55px;
 }
 
 .list-main-hit {
@@ -428,6 +457,8 @@ html {
 
 .list-main-hit li {
   width: 267px;
+  position: relative;
+  color: #ffffff;
 }
 
 .main-about {
@@ -553,6 +584,7 @@ html {
   padding: 6px;
   flex-wrap: wrap;
   border-radius: 15px;
+  background-size: cover;
 }
 
 .crutch {
@@ -843,11 +875,11 @@ html {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price-weight {
   font-size: 30px;
-  line-height: 45px;
 }
 
 .wrap-container {
@@ -881,14 +913,15 @@ html {
   padding-top: 20px;
   padding-bottom: 24px;
 }
-.wrap-feedback-bt {
+
+.wrap-right-bt {
   display: flex;
   justify-content: flex-end;
   margin-right: 25px;
 }
 
 .feedback {
-  /*display:nonne;*/
+  display: none;
   padding-left: 24px;
   width: 478px;
   height: 443px;
@@ -937,9 +970,11 @@ html {
   box-sizing: border-box;
   margin-bottom: 20px;
 }
+
 .feedback-email input {
   padding: 16px 0px 12px 14px;
 }
+
 .feedback-name input {
   padding: 16px 10px 15px 15px;
 }
@@ -955,9 +990,11 @@ html {
   height: 155px;
   border-radius: 5px;
 }
+
 .feedback-textarea textarea {
   padding: 13px 0px 0px 15px;
 }
+
 .feedback input:focus,
 .feedback textarea:focus {
   border: solid 2px rgba(46, 136, 228, 0.52);
