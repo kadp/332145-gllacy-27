@@ -117,7 +117,7 @@ html {
 }
 
 .site-list-link {
-  padding: 10px;
+  padding: 7px 13px;
   color: #ffffff;
   display: block;
   vertical-align: middle;
@@ -128,24 +128,29 @@ html {
   background-color: #ffffff;
   color: #323232;
   border-radius: 15px;
-  padding: 10px;
 }
 
 .site-list-link:active {
   background-color: #d07058;
-  padding: 10px;
   border-radius: 15px;
 }
-
+.site-navigation > li:hover .catalog-menu {
+  display: block;
+}
 .catalog-menu {
+
+  padding-top: 15px;
+  display: none;
   position: absolute;
-  top: 40px;
-  left: 0;
+  top: 35px;
+  left: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   background-color: #f8f7f4;
 }
+.wrap-catalog-menu {
 
+}
 .catalog-menu li {
   padding: 0;
 }
@@ -199,59 +204,61 @@ html {
 }
 
 .user-navigation li {
-  background-color: rgb(255, 255, 255, 0.2);
+  padding-left: 7px;
 }
 
-.user-navigation li:hover,
-.user-navigation li:focus,
-.user-navigation li:active {
+.loupe:hover,
+.loupe:focus,
+.loupe:active {
   background-color: rgb(248, 247, 244);
 }
 
 .loupe {
   border-radius: 50%;
   position: relative;
-}
-
-.loupe a {
+  background-color: rgb(255, 255, 255, 0.2);
   width: 33px;
   height: 33px;
-  display: block;
-  text-align: center;
-  line-height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.loupe a:hover path,
-.loupe a:focus path {
+.loupe:hover path,
+.loupe:focus path {
   fill: #323232;
 }
 
 .entrance {
   position: relative;
-  padding-left: 50px;
-}
-
-.entrance::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 19px;
-  left: 28px;
-  top: -1px;
-  background-image: url(../img/svg/entrance.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.2;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 7px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 93px;
 }
 
 .entrance:hover,
 .entrance:focus {
   color: #323232;
+  background-color: rgb(248, 247, 244);
+}
+
+.entrance:hover path,
+.entrance:focus path {
+  fill: #323232;
 }
 
 .basket {
   position: relative;
-  padding-left: 50px;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 40px;
 }
 
 .basket::before {
@@ -259,12 +266,11 @@ html {
   position: absolute;
   width: 21px;
   height: 20px;
-  left: 28px;
-  top: -1px;
+  left: 14px;
+  top: 6px;
   background-image: url(../img/svg/basket.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.2;
 }
 
 .basket-red {
@@ -347,8 +353,7 @@ html {
   background-color: #849d8f;
   background-image: url(../img/cream/slide-one.png);
   background-repeat: no-repeat;
-  background-position: top center;
-
+  background-position: center 119px;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -694,16 +699,32 @@ html {
   border-radius: 15px;
   background-size: cover;
 }
-
+.wrap-subscribe {
+  background-color: #f8f7f4;
+  border-radius: 15px;
+  padding: 22px;
+}
 .crutch {
   display: flex;
   justify-content: space-between;
 }
 
-.main-subscribe-email p {
-  background-color: #f8f7f4;
+.wrap-subscribe p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 38px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+  text-align: left;
 }
-
+.bt-email {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 14px 19px;
+}
 
 .main-subscribe-email input::placeholder {
   font-weight: 400;
