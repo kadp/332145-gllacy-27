@@ -15,17 +15,7 @@
           height="64" alt="Логотип магазина мороженого Глейси"></a>
       <div class="site-user-wrap">
         <ul class="site-navigation list-style-reset">
-          <li><a href="catalog.html" class="current">Каталог</a>
-            <!-- Отключил до 7 задания.
-          <ul class="catalog-menu list-style-reset">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="catalog.html" class="current">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-          -->
-          </li>
+          <li><a href="catalog.html" class="current">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
         </ul>
@@ -77,21 +67,45 @@
         <div class="wrap-stage-one">
           <div class="wrap-sort">
             <label for="sort">Сортировка:</label>
-            <select id="sort" name="sort">
-              <option value="popular">по популярности</option>
-            </select>
+            <div class="wrap-svg">
+              <select id="sort" name="sort" class="sort">
+                <option value="popular">по популярности</option>
+                <option value="low-price">сначала недорогие</option>
+                <option value="high-price">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+              <svg class="sort-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11" /></svg>
+            </div>
           </div>
-          <div class="wrap-price">
+          <div class="wrap-price ">
             <label for="price">Цена: 100 руб. - 500 руб.</label>
-            <input type="range" id="price" name="price" min="0" max="1000" step="1">
+            <input class="price" type="range" id="price" name="price" min="0" max="1000" step="1">
+            <div class="price-background">
+              <div class="price-line"></div>
+              <div class="price-line-center"></div>
+              <svg class="price-bt-one" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                <path opacity=".3" fill="#ABABAB"
+                  d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
+              <svg class="price-bt-two" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                <path opacity=".3" fill="#ABABAB"
+                  d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                <circle fill="#FFF" cx="10" cy="10" r="10" />
+                <circle fill="#ABABAB" cx="10" cy="10" r="2" /></svg>
+            </div>
           </div>
-          <div class="catalog-fat wrap-fat">  
-              <h3>Жирность:</h3>
+          <div class="catalog-fat wrap-fat">
+            <h3>Жирность:</h3>
             <div class="wrap-fat-one">
-              <label><input type="radio" name="fat" value="0">0%</label>
-              <label><input type="radio" name="fat" value="to10" checked>до 10%</label>
-              <label><input type="radio" name="fat" value="to30">до 30%</label>
-              <label><input type="radio" name="fat" value="up30">Выше 30%</label>
+              <input type="radio" id="fat-0" name="filters-fat" value="fat-0"><label for="fat-0">0%</label>
+              <input type="radio" id="fat-to-10" name="filters-fat" value="fat-to-10" checked><label for="fat-to-10">до
+                10%</label>
+              <input type="radio" id="fat-to-30" name="filters-fat" value="fat-to-30"><label for="fat-to-30">до
+                30%</label>
+              <input type="radio" id="fat-up-30" name="filters-fat" value="fat-up-30"><label for="fat-up-30">Выше
+                30%</label>
             </div>
           </div>
         </div>
@@ -276,13 +290,13 @@
       </ul>
     </div>
     <div class="wrap-copyright">
-      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"
-        title="HTML Academy"></a>
+      <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
       Сделано в
       <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       &copy; 2020
     </div>
   </footer>
+
 </body>
 
 </html>

@@ -252,6 +252,30 @@
           <a class="button">Форма обратной связи</a>
         </div>
       </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Форма заполнения для обратной связи</h2>
+        <h3>Мы обязательно вам ответим!</h3>
+        <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
+          <div class="feedback-name">
+            <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
+            <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback-email">
+            <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
+            <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
+          </div>
+          <div class="feedback-textarea">
+            <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
+            <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"></textarea>
+          </div>
+          <div class="wrap-right-bt">
+            <button class="button feedback-bt" type="submit">Отправить</button>
+          </div>
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </form>
+      </section>
 
     </main>
     <footer class="main-footer">
@@ -312,36 +336,14 @@
       <div class="wrap-copyright">
         <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"
           title="HTML Academy"></a>
-        Сделано в
-        <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        &copy; 2020
+        <p>Сделано в
+          <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          &copy; 2020
+        </p>
       </div>
     </footer>
 
-    <section class="feedback">
-      <h2 class="visually-hidden">Форма заполнения для обратной связи</h2>
-      <h3>Мы обязательно вам ответим!</h3>
-      <form action="https://echo.htmlacademy.ru" name="feedback" method="POST">
-        <div class="feedback-name">
-          <label for="feedback-name" class="visually-hidden">Поле ввода имени и фамилии</label>
-          <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия">
-        </div>
-        <div class="feedback-email">
-          <label for="feedback-email" class="visually-hidden">Поле ввода почты для обратной связи</label>
-          <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com">
-        </div>
-        <div class="feedback-textarea">
-          <label for="feedback-textarea" class="visually-hidden">Поле ввода вашего сообщения</label>
-          <textarea id="feedback-textarea" name="feedback-textarea" placeholder="В свободной форме"></textarea>
-        </div>
-        <div class="wrap-right-bt">
-          <button class="button feedback-bt" type="submit">Отправить</button>
-        </div>
-        <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </form>
-    </section>
+
   </div>
 
 </body>

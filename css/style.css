@@ -836,9 +836,10 @@ html {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 28px 0 27px;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, .5);
 }
 
 .footer-social {
@@ -903,6 +904,73 @@ html {
   color: #ffffff;
 }
 
+/*input:checked + label*/
+.wrap-sort label,
+.wrap-price label,
+.wrap-fat h3 {
+  margin: 6px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.sort {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 10px 26px;
+  border-radius: 30px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: none;
+  color: #ffffff;
+}
+
+.sort option {
+  width: 127px;
+  height: 74px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+}
+
+.sort-icon {
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  top: 15px;
+  right: 15px;
+}
+
+.sort-icon path {
+  fill: #ffffff;
+}
+
+.wrap-svg:hover path {
+  fill: #333333;
+}
+
+.wrap-svg:hover .sort {
+  color: #323232;
+}
+
+.wrap-svg {
+  position: relative;
+}
+
+.wrap-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-wrap {
   display: flex;
   flex-direction: column;
@@ -921,15 +989,111 @@ html {
 .wrap-price {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  display: none;
+}
+
+.price-background {
+  margin-left: 14px;
+  border-radius: 30px;
+  width: 220px;
+  height: 37px;
+  position: relative;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.price-line {
+  position: absolute;
+  left: 22px;
+  margin-top: 16px;
+  width: 176px;
+  height: 4px;
+  opacity: 0.5;
+  background-color: #ffffff;
+}
+
+.price-line-center {
+  position: absolute;
+  top: 16px;
+  left: 38px;
+  width: 107px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.price-bt-one {
+  position: absolute;
+  top: 8px;
+  left: 38px;
+}
+
+.price-bt-one:hover,
+.price-bt-two:hover {
+  transform: scale(1.1);
+}
+
+.price-bt-two {
+  position: absolute;
+  top: 8px;
+  right: 67px;
+}
+
+.wrap-fat-one {
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 9px 37px;
 }
 
 .wrap-fat {
   display: flex;
   flex-direction: column;
+  margin-left: 14px;
 }
 
-.wrap-fat-one {
-  /*empty style*/
+.wrap-fat-one input[type="radio"]:checked,
+.wrap-fat-one input[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+
+.wrap-fat-one input[type="radio"]:checked+label,
+.wrap-fat-one input[type="radio"]:not(:checked)+label {
+  display: inline-block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+
+.wrap-fat-one input[type="radio"]:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/svg/radio-on.svg);
+  opacity: 0.8;
+}
+
+.wrap-fat-one input[type="radio"]:hover:checked+label::before,
+.wrap-fat-one input[type="radio"]:hover:not(:checked)+label::before {
+  opacity: 1;
+}
+
+.wrap-fat-one input[type="radio"]:not(:checked)+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/svg/radio-off.svg);
+  opacity: 0.8;
 }
 
 .wrap-fillers-one {
@@ -1006,15 +1170,18 @@ html {
   width: 267px;
   padding: 7px 14px;
 }
+
 .cream-card:hover {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgb(255, 255, 255, 0.2);
   position: absolute;
   padding: 7px 14px;
 }
+
 .cream-card:hover .quick-view {
   display: block;
 }
+
 .cream-card p {
   text-align: left;
   padding: 0;
@@ -1162,6 +1329,7 @@ html {
   font-weight: 400;
   color: #999999;
 }
+
 .user-navigation>li:hover .wrap-login-form {
   display: block;
 }
@@ -1174,6 +1342,7 @@ html {
   left: -137px;
   z-index: 30;
 }
+
 .login-form {
   display: flex;
   flex-wrap: wrap;
@@ -1222,6 +1391,7 @@ html {
   flex-direction: column;
   align-items: baseline;
 }
+
 .recovery {
   display: inline-block;
   font-size: 13px;
@@ -1234,12 +1404,14 @@ html {
   border-bottom-style: solid;
   margin-left: 20px;
 }
+
 .bt-login {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   padding: 12px 22px;
 }
+
 .user-navigation>li:hover .search {
   display: block;
 }
