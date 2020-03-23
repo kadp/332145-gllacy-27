@@ -11,8 +11,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a href="index.html" aria-label="На главную страницу Магазина Глейси"><img src="img/svg/logo.svg" width="154"
-          height="64" alt="Логотип магазина мороженого Глейси"></a>
+      <a href="index.html" class="catalog-size-logo" aria-label="На главную страницу Магазина Глейси"><img
+          src="img/svg/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси"></a>
       <div class="site-user-wrap">
         <ul class="site-navigation list-style-reset">
           <li><a class="site-list-link current" href="catalog.html">Каталог</a>
@@ -83,34 +83,37 @@
           </li>
           <li>
             <a class="basket-red" href="#"><span class="basket-font">2 товара</span></a>
-            <section class="basket-list">
-              <h2 class="visually-hidden">Корзина</h2>
-              <div class="wrap-basket-list">
-                <ul class="shop-list list-style-reset">
-                  <li class="shop-list-item">
-                    <button class="delete-item"></button>
-                    <a href="#">
-                      <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings-small.jpg" width="33" height="33"
-                        alt="Мороженое пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
-                    <span class="basket-price">1,5 кг х <span class="basket-price-kg">200 руб.</span></span>
-                    <span class="basket-price">300 руб</span>
-                  </li>
-                  <li class="shop-list-item">
-                    <button class="delete-item"></button>
-                    <a href="#">
-                      <img src="img/cream/creamy-strawberry-with-white-chocolate-powder-small.jpg" width="33"
-                        height="33" alt="Мороженое клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир
-                      с присыпкой из белого шоколада</a>
-                    <span class="basket-price">1,5 кг х <span class="basket-price-kg">300 руб.</span></span>
-                    <span class="basket-price">450 руб</span>
-                  </li>
-                  <li class="shop-list-item">
-                    <span class="self"><b>Итог: 750 руб.</b></span>
-                  </li>
-                </ul>
-                <a class="button-basket" href="#">Оформить заказ</a>
-              </div>
-            </section>
+            <div class="wrap-basket-red">
+              <section class="basket-list">
+                <h2 class="visually-hidden">Корзина</h2>
+                <div class="wrap-basket-list">
+                  <ul class="shop-list list-style-reset">
+                    <li class="shop-list-item">
+                      <button class="delete-item"></button>
+                      <a href="#">
+                        <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings-small.jpg" width="33" height="33"
+                          alt="Мороженое пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</a>
+                      <span class="basket-price">1,5 кг х <span class="basket-price-kg">200 руб.</span></span>
+                      <span class="basket-price">300 руб</span>
+                    </li>
+                    <li class="shop-list-item">
+                      <button class="delete-item"></button>
+                      <a href="#">
+                        <img src="img/cream/creamy-strawberry-with-white-chocolate-powder-small.jpg" width="33"
+                          height="33" alt="Мороженое клубничный пломбир с присыпкой из белого шоколада">Клубничный
+                        пломбир
+                        с присыпкой из белого шоколада</a>
+                      <span class="basket-price">1,5 кг х <span class="basket-price-kg">300 руб.</span></span>
+                      <span class="basket-price">450 руб</span>
+                    </li>
+                    <li class="shop-list-item">
+                      <span class="self"><b>Итог: 750 руб.</b></span>
+                    </li>
+                  </ul>
+                  <a class="button-basket" href="#">Оформить заказ</a>
+                </div>
+              </section>
+            </div>
           </li>
         </ul>
       </div>
@@ -145,8 +148,8 @@
             </div>
           </div>
           <div class="wrap-price ">
-            <label for="price">Цена: 100 руб. - 500 руб.</label>
-            <input class="price" type="range" id="price" name="price" min="0" max="1000" step="1">
+            <label for="hide-input">Цена: 100 руб. - 500 руб.</label>
+            <input class="hide-input" type="range" id="price" name="price" min="0" max="1000" step="1">
             <div class="price-background">
               <div class="price-line"></div>
               <div class="price-line-center"></div>
@@ -193,7 +196,6 @@
           <button class="sort-button" for="filter" type="submit">Применить</button>
         </div>
       </form>
-
     </section>
     <section class="catalog-assorti">
       <h2 class="visually-hidden">Ассортимент сливочного мороженного</h2>
