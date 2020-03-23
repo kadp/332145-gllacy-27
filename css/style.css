@@ -256,6 +256,8 @@ html {
   width: 93px;
 }
 
+.entrance:hover a,
+.entrance:focus a,
 .entrance-link:hover,
 .entrance-link:focus,
 .entrance:hover,
@@ -675,17 +677,34 @@ html {
   margin: 28px 0px 0px 20px;
 }
 
-.main-banners a {
+.button-banners {
+  padding: 12px 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
+  text-align: center;
   color: #ffffff;
-  box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
-  background-image: linear-gradient(to top, #e74a35, #f26843);
-  margin: 25px 0px 9px 0px;
-  padding: 14px 23px;
-  border-radius: 15px;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
   cursor: pointer;
+}
+
+.button-banners:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-banners:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .about-list {
@@ -695,9 +714,11 @@ html {
   padding: 0;
   justify-content: space-around;
 }
+
 .hit {
   padding: 6px 12px;
 }
+
 .hit:hover {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgb(255, 255, 255, 0.2);
@@ -779,7 +800,7 @@ html {
 }
 
 .list-main-hit li {
-  width: 267px;
+  width: 275px;
   position: relative;
   color: #ffffff;
 }
@@ -901,7 +922,6 @@ html {
 .wrap-subscribe {
   background-color: #f8f7f4;
   border-radius: 15px;
-  padding: 22px;
 }
 
 .crutch {
@@ -910,9 +930,9 @@ html {
 }
 
 .wrap-subscribe p {
-  margin: 0;
+  margin: 20px 21px;
   padding: 0;
-  padding-bottom: 38px;
+  padding-bottom: 18px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -920,13 +940,41 @@ html {
   text-align: left;
 }
 
-.bt-email {
+.subscrabe-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-email {
+  padding: 12px 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
-  padding: 10px 19px;
-  color: #fefefe;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
 }
+
+.button-email:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-email:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 .main-subscribe-email input::placeholder {
   font-weight: 400;
@@ -944,10 +992,10 @@ html {
   border: solid 1px rgba(178, 178, 178, 0.52);
   box-sizing: border-box;
   width: 360px;
-  margin-right: 11px;
   padding: 9px 14px;
   border: solid 2px transparent;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .main-subscribe-email input:focus {
@@ -963,16 +1011,20 @@ html {
 .main-contact {
   position: absolute;
   right: 27px;
-  top: 63px;
+  top: 90px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #323232;
-  text-align: left;
-  border-radius: 5px;
+  text-align: center;
+  border-radius: 15px;
   background-color: #ffffff;
-  width: 300px;
-  padding: 25px;
+  width: 302px;
+}
+
+.main-contact p {
+  text-align: left;
+  padding: 0 25px;
 }
 
 .main-map {
@@ -986,15 +1038,8 @@ html {
   position: absolute;
   width: 80px;
   height: 140px;
-  top: 139px;
+  top: 165px;
   left: 266px;
-}
-
-.main-contact a {
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 700;
-  color: #323232;
 }
 
 .main-contact h3 {
@@ -1002,12 +1047,15 @@ html {
   line-height: 24px;
   font-weight: 700;
   color: #323232;
+  text-align: left;
+  padding: 0 25px;
 }
 
 .tel {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+  color: #323232;
 }
 
 .time {
@@ -1405,7 +1453,7 @@ html {
   color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
-  width: 267px;
+  width: 275px;
   padding: 7px 14px;
 }
 
@@ -1570,6 +1618,38 @@ html {
   color: #999999;
 }
 
+.button-feedback {
+  padding: 12px 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-feedback:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-feedback:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+
 .user-navigation>li:hover .wrap-login-form {
   display: block;
 }
@@ -1577,8 +1657,8 @@ html {
 .wrap-login-form {
   display: none;
   position: absolute;
-  padding-top: 5px;
-  top: 35px;
+  padding-top: 15px;
+  top: 23px;
   right: 0px;
   z-index: 30;
 }
