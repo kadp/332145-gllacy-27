@@ -346,22 +346,19 @@ html {
   background-position: 0 0;
 }
 
-.wrap-basker-red {
-  padding-top: 5px;
+.wrap-basket-red {
+  display: none;
+  padding-top: 10px;
   display: none;
   width: 518px;
   position: absolute;
-  top: 42px;
+  top: 33px;
   right: 0;
   z-index: 30;
 }
 
 .basket-list {
-  display: none;
-  width: 518px;
-  position: absolute;
-  top: 42px;
-  right: 0;
+  position: relative;
   background-color: #f8f7f4;
   color: #323232;
   padding: 14px;
@@ -1450,6 +1447,18 @@ html {
   margin-left: 16px;
 }
 
+.sort-button:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.sort-button:active {
+  background-color: #ededed;
+  color: #323232;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border: none;
+}
+
 .favorite {
   font-weight: 700;
   list-style-image: url('../img/svg/heart.svg');
@@ -1516,6 +1525,38 @@ html {
   margin-top: -55px;
   margin-bottom: 17px;
 }
+
+.button-cream-card {
+  padding: 12px 28px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-cream-card:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-cream-card:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 .price {
   font-size: 45px;
@@ -1804,7 +1845,7 @@ html {
   padding: 12px 22px;
 }
 
-.user-navigation>li:hover .basket-list,
+.user-navigation>li:hover .wrap-basket-red,
 .user-navigation>li:hover .search {
   display: block;
 }
