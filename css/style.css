@@ -62,10 +62,34 @@ html {
   flex-shrink: 0;
 }
 
-.feedback-bt {
-  width: 139px;
-  height: 44px;
-  border-radius: 30px;
+.button-feedback-form {
+  padding: 12px 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-feedback-form:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-feedback-form:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .main-button-two {
@@ -502,9 +526,9 @@ html {
 .site-wrapper {
   min-width: 940px;
   background-color: #849d8f;
-  background-image: url('../img/cream/slide-one.png');
+  background-image: url('../img/cream/slide-one.png'), url('../img/light-background.png');
   background-repeat: no-repeat;
-  background-position: center 119px;
+  background-position: center 119px, center 0;
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -516,11 +540,11 @@ html {
 }
 
 .site-wrapper::before {
-  background-image: url('../img/cream/slide-two.png');
+  background-image: url('../img/cream/slide-two.png'), url('../img/blue-background.png');
 }
 
 .site-wrapper::after {
-  background-image: url('../img/cream/slide-three.png');
+  background-image: url('../img/cream/slide-three.png'), url('../img/cream-background.png');
 }
 
 .slider {
@@ -610,17 +634,18 @@ html {
 
 #product-1:checked~.site-wrapper {
   background-color: #849d8f;
-  background-image: url('../img/cream/slide-one.png');
+  background-image: url('../img/cream/slide-one.png'), url('../img/light-background.png');
+  z-index: 50;
 }
 
 #product-2:checked~.site-wrapper {
   background-color: #8996a6;
-  background-image: url('../img/cream/slide-two.png');
+  background-image: url('../img/cream/slide-two.png'), url('../img/blue-background.png');
 }
 
 #product-3:checked~.site-wrapper {
   background-color: #9d8b84;
-  background-image: url('../img/cream/slide-three.png');
+  background-image: url('../img/cream/slide-three.png'), url('../img/cream-background.png');
 }
 
 #product-1:checked~.site-wrapper #slide1,
@@ -998,13 +1023,13 @@ html {
   margin-bottom: 20px;
 }
 
-.main-subscribe-email input:focus {
-  border: solid 2px rgba(46, 136, 228, 0.52);
+.main-subscribe-email input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
   box-sizing: border-box;
 }
 
-.main-subscribe-email input:hover {
-  border: solid 2px rgba(154, 154, 154, 0.52);
+.main-subscribe-email input:focus {
+  border: solid 2px rgba(46, 136, 228, 0.52);
   box-sizing: border-box;
 }
 
@@ -1536,6 +1561,7 @@ html {
   left: 50%;
   margin-top: -221px;
   margin-left: -239px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .modal-close {
@@ -1569,10 +1595,10 @@ html {
   text-align: left;
   border-radius: 5px;
   background-color: #ffffff;
-  border: solid 1px rgba(178, 178, 178, 0.52);
+  box-shadow: 0 0 0 1px rgba(248, 247, 244, 0.5);
+  border: solid 2px rgba(178, 178, 178, 0.5);
   box-sizing: border-box;
   margin-bottom: 20px;
-  border: solid 2px transparent;
   box-sizing: border-box;
 }
 
@@ -1600,17 +1626,18 @@ html {
   padding: 13px 0px 0px 15px;
 }
 
+.feedback input:hover,
+.feedback textarea:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  box-sizing: border-box;
+}
+
 .feedback input:focus,
 .feedback textarea:focus {
   border: solid 2px rgba(46, 136, 228, 0.52);
   box-sizing: border-box;
 }
 
-.feedback input:hover,
-.feedback textarea:hover {
-  border: solid 2px rgba(154, 154, 154, 0.52);
-  box-sizing: border-box;
-}
 
 .feedback input::placeholder,
 .feedback textarea::placeholder {
@@ -1649,7 +1676,6 @@ html {
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-
 .user-navigation>li:hover .wrap-login-form {
   display: block;
 }
@@ -1666,10 +1692,10 @@ html {
 .login-form {
   display: flex;
   flex-wrap: wrap;
+  padding: 19px;
   position: relative;
   width: 277px;
   border-radius: 5px;
-  padding: 19px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 }
@@ -1686,7 +1712,8 @@ html {
   width: 241px;
   padding: 8px;
   margin-bottom: 20px;
-  border: solid 2px transparent;
+  box-shadow: 0 0 0 1px rgba(248, 247, 244, 0.5);
+  border: solid 2px rgba(178, 178, 178, 0.5);
   box-sizing: border-box;
 }
 
@@ -1698,14 +1725,43 @@ html {
   line-height: 24px;
 }
 
+.login-form input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  box-sizing: border-box;
+}
+
 .login-form input:focus {
   border: solid 2px rgba(46, 136, 228, 0.52);
   box-sizing: border-box;
 }
 
-.login-form input:hover {
-  border: solid 2px rgba(154, 154, 154, 0.52);
-  box-sizing: border-box;
+.button-login-form {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0px 24px;
+}
+
+.button-login-form:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button-login-form:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 .wrap-recovery {
@@ -1721,10 +1777,8 @@ html {
   font-weight: 400;
   color: #323232;
   text-align: left;
-  border-bottom-color: rgba(0, 0, 0, 0.5);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  margin-left: 20px;
+  text-decoration: underline;
+  padding-left: 17px;
 }
 
 .bt-login {
@@ -1767,6 +1821,7 @@ html {
   background-color: #ffffff;
   width: 311px;
   padding: 8px;
+  border: 1px solid #d3d3d2;
 }
 
 .search input::placeholder {
@@ -1804,3 +1859,4 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
