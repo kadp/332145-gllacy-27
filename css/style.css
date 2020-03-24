@@ -482,34 +482,50 @@ html {
 
 .breadcrumbs-bottom {
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
   justify-content: flex-end;
 }
 
-.breadcrumbs-bottom li {
-  display: flex;
-  align-items: center;
-  margin: 0 5px;
+.breadcrumbs-bottom-link {
+  display: inline-block;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  color: #ffffff;
-}
-
-.breadcrumbs-bottom-current a {
-  text-align: center;
   width: 27px;
-  color: #000000;
-  background-color: #ffffff;
+  text-align: center;
+  color: #ffffff;
   border-radius: 50%;
   line-height: 26px;
+  margin: 0 5px;
+}
+
+.breadcrumbs-bottom-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs-bottom-link:active {
+  background-color: rgba(255, 255, 255);
+  color: #323232
+}
+
+.breadcrumbs-bottom-current,
+.breadcrumbs-bottom-current:hover {
+  background-color: rgba(255, 255, 255);
+  color: #323232
 }
 
 .breadcrumbs-bottom-disabled {
   opacity: 0.2;
   transform: rotate(180deg);
+}
+
+.breadcrumbs-bottom-disabled:hover,
+.breadcrumbs-bottom-disabled:active {
+  background-color: transparent;
+}
+
+.breadcrumbs-bottom-last-link:hover,
+.breadcrumbs-bottom-last-link:active {
+  background-color: transparent;
 }
 
 .current,
@@ -1859,4 +1875,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
