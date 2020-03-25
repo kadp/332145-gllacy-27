@@ -1409,7 +1409,7 @@ html {
 .price-button-one {
   position: absolute;
   top: 8px;
-  left: 29px;
+  left: 33px;
   width: 0px;
   height: 0px;
   border: none;
@@ -1436,7 +1436,7 @@ html {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 9px 15px;
   height: 37px;
-  margin-left: 7px;
+  margin-left: 0px;
 }
 
 .wrap-fat {
