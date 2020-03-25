@@ -118,7 +118,6 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 3px;
 }
 
 .site-navigation {
@@ -127,28 +126,23 @@ html {
   align-items: center;
 }
 
-.site-navigation li {
-  display: flex;
+.site-navigation-item {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  padding: 9px 14px;
-  margin-right: 5px;
+  padding: 7px 14px;
+  margin-left: 9px;
 }
-
+.site-navigation-item:not(:nth-of-type(1)) {
+  margin: 0;
+}
 .navigation-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .navigation-link:hover {
   text-decoration: none;
-}
-
-.site-navigation-item {
-  color: #ffffff;
-  display: block;
-  vertical-align: middle;
 }
 
 .site-navigation-item:hover,
@@ -183,6 +177,9 @@ html {
   border-radius: 5px;
   background-color: #f8f7f4;
 }
+.catalog-menu-item {
+  
+}
 
 .wrap-catalog-menu {
   position: absolute;
@@ -191,16 +188,13 @@ html {
   left: 0;
 }
 
-.catalog-menu li {
-  padding: 0;
-}
 
 .line::after {
   content: "";
   border-bottom: 1px solid rgb(50, 50, 50, 0.2);
   font-weight: 700;
   position: absolute;
-  top: 46px;
+  top: 41px;
   left: 6px;
   width: 128px;
 }
@@ -221,6 +215,9 @@ html {
   width: 143px;
   padding: 13px 0px 13px 20px;
   z-index: 10;
+  padding: 13px 14px;
+  display: inline-block;
+  position: relative;
 }
 
 .catalog-list-link:hover,
@@ -240,6 +237,7 @@ html {
   font-weight: 400;
   color: #ffffff;
   display: flex;
+  margin-top: 17px;
 }
 
 .loupe:hover,
@@ -269,26 +267,28 @@ html {
   fill: #323232;
 }
 
-.user-navigation li {
-  margin-left: 10px;
-  height: 33px;
-}
-
 .entrance {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
+  width: 93px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.entrance svg {
+  margin-right: 3px;
 }
 
 .entrance-link {
+  font-size: 14px;
   display: flex;
-  position: relative;
-  padding: 7px 15px;
-  border-radius: 30px;
   align-items: flex-end;
-  justify-content: space-around;
-  width: 93px;
   font-weight: 500;
+  top: -1px;
+  position: relative;
+}
 }
 
 .entrance:hover a,
@@ -308,13 +308,13 @@ html {
 
 .basket {
   background-color: rgba(255, 255, 255, 0.2);
-  padding: 8px 20px;
+  padding: 8px 21px;
   border-radius: 30px;
-  top: 1px;
-  left: 2px;
   display: inline-block;
   position: relative;
-  padding-left: 40px;
+  padding-left: 42px;
+  margin-left: 9px;
+  width: 100px;
 }
 
 .basket::before {
@@ -322,18 +322,21 @@ html {
   position: absolute;
   width: 21px;
   height: 20px;
-  left: 14px;
+  left: 15px;
   top: 6px;
   background-image: url('../img/svg/basket.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.basket-font {
+.basket-link {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  color: #323232;
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  left: 2px;
 }
 
 .basket-red {
@@ -344,6 +347,8 @@ html {
   display: flex;
   justify-content: flex-end;
   padding-left: 40px;
+  color: #323232;
+  font-weight: 500;
 }
 
 .basket-red::before {
@@ -351,7 +356,7 @@ html {
   position: absolute;
   width: 21px;
   height: 20px;
-  left: 14px;
+  left: 16px;
   top: 6px;
   background-image: url('../img/svg/basket-red.svg');
   background-repeat: no-repeat;
@@ -503,6 +508,7 @@ html {
   display: flex;
   justify-content: flex-end;
   margin-right: -10px;
+  margin-bottom: 29px;
 }
 
 .breadcrumbs-bottom-link {
@@ -779,7 +785,7 @@ html {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -914,10 +920,10 @@ html {
 
 .about-list-item {
   display: flex;
-  width: 515px;
+  width: 541px;
   position: relative;
-  padding-left: 37px;
-  padding-top: 10px;
+  padding-left: 57px;
+  padding-top: 13px;
   padding-right: 8px;
   font-size: 16px;
   line-height: 22px;
@@ -927,12 +933,16 @@ html {
   font-weight: 400;
 }
 
+.about-list-item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 10px;
+}
+
 .about-list-item::before {
   content: "";
   position: absolute;
   width: 49px;
   height: 49px;
-  left: -29px;
+  left: 1px;
   top: 0px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1624,7 +1634,7 @@ html {
   padding: 0;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 80px;
+  margin-bottom: 43px;
 }
 
 .list-assorti li {
@@ -1636,6 +1646,9 @@ html {
 }
 
 .cream-card-link {
+  margin-top: 4px;
+  width: 256px;
+  display: inline-block;
   font-weight: 500;
   text-decoration-line: underline;
   text-decoration-style: solid;
@@ -1653,17 +1666,15 @@ html {
 .cream-card {
   color: #ffffff;
   text-align: center;
-  margin-bottom: 40px;
-  width: 285px;
-  padding: 7px 14px;
-  margin-bottom: 12px;
+  margin-bottom: 37px;
+  position: relative;
 }
 
 .cream-card:hover {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: rgb(255, 255, 255, 0.2);
   position: absolute;
-  padding: 7px 14px;
+  z-index: 30;
 }
 
 .cream-card:hover .quick-view {
@@ -1674,8 +1685,10 @@ html {
   text-align: left;
   padding: 0;
   margin: 0;
-  margin-top: -59px;
+  margin-top: -63px;
   margin-bottom: 17px;
+  word-spacing: -4px;
+  margin-left: -1px;
 }
 
 .price {
