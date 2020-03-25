@@ -1401,7 +1401,7 @@ html {
   position: absolute;
   top: 16px;
   left: 38px;
-  width: 117px;
+  width: 107px;
   height: 4px;
   background-color: #ffffff;
 }
@@ -1428,6 +1428,7 @@ html {
   width: 0px;
   height: 0px;
   border: none;
+  padding: 0;
 }
 
 .wrap-fat-one {
