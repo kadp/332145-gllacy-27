@@ -23,7 +23,7 @@
         <div class="site-user-wrap">
           <ul class="site-navigation list-style-reset">
             <li class="site-navigation-item">
-              <a href="catalog.html">Каталог</a>
+              <a class="navigation-link" href="catalog.html">Каталог</a>
               <div class="wrap-catalog-menu">
                 <ul class="catalog-menu list-style-reset">
                   <li><a class="catalog-list-link line current-submenu" href="#">Новинки</a></li>
@@ -34,8 +34,8 @@
                 </ul>
               </div>
             </li>
-            <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-            <li class="site-navigation-item"><a href="#">О Компании</a></li>
+            <li class="site-navigation-item"><a class="navigation-link" href="#">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a class="navigation-link" href="#">О Компании</a></li>
           </ul>
           <ul class="user-navigation list-style-reset">
             <li class="loupe"><a class="loupe-link" href="#">
@@ -68,7 +68,7 @@
               <div class="wrap-login-form">
                 <section class="login-form">
                   <h2 class="visually-hidden">Окно авторизации в магазине Глейси</h2>
-                  <form action="https://echo.htmlacademy.ru" id="authorization" name="authorization" method="POST">
+                  <form action="https://echo.htmlacademy.ru" name="authorization" method="POST">
                     <div>
                       <label for="user-login" class="visually-hidden">Поле ввода Логина</label>
                       <input id="user-login" type="email" name="login" placeholder="email@example.com">
@@ -77,12 +77,14 @@
                       <label for="user-password" class="visually-hidden">Поле ввода пароля</label>
                       <input id="user-password" type="password" name="password" placeholder="••••••••">
                     </div>
+                    <div class="wrap-button-recovery">
+                      <button class="button-login-form" type="submit">Войти</button>
+                        <div class="wrap-recovery">
+                         <a href="#" class="recovery">Забыли пароль?</a>
+                         <a href="#" class="recovery">Новая регистрация</a>
+                        </div>
+                    </div>
                   </form>
-                  <button form="authorization" class="button-login-form" type="submit">Войти</button>
-                  <div class="wrap-recovery">
-                    <a href="#" class="recovery">Забыли пароль?</a>
-                    <a href="#" class="recovery">Новая регистрация</a>
-                  </div>
                 </section>
               </div>
             </li>
@@ -93,8 +95,8 @@
         </div>
       </nav>
       <div class="time-and-tel">
-        <p>с 10 до 20, ежедневно</p>
-        <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+        <p class="shedule">с 10 до 20, ежедневно</p>
+        <p class="phone-number"><a href="tel:88124502525">8 812 450-25-25</a></p>
       </div>
     </header>
 
@@ -145,7 +147,7 @@
               <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
                 бесплатно.</p>
               <div class="wrap-right-bt">
-                <a class="button-banners" href="#">Хочу шоколадки!</a>
+                <a class="button-banners button-right-banner" href="#">Хочу шоколадки!</a>
               </div>
             </li>
           </ul>
@@ -158,7 +160,7 @@
                 <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267"
                   alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="price">310 &#8381;<span class="price-weight">/кг</span></p>
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <a class="hit-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a class="button-hit quick-view">Быстрый просмотр</a>
               </div>
             </li>
@@ -167,7 +169,7 @@
                 <img src="img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267"
                   alt="Мороженое сливочно-кофейное с кусочками шоколада">
                 <p class="price">380 &#8381;<span class="price-weight">/кг</span></p>
-                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+                <a class="hit-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 <a class="button-hit quick-view">Быстрый просмотр</a>
               </div>
             </li>
@@ -176,7 +178,7 @@
                 <img src="img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267"
                   alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
                 <p class="price">355 &#8381;<span class="price-weight">/кг</span></p>
-                <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <a class="hit-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a class="button-hit quick-view">Быстрый просмотр</a>
               </div>
             </li>
@@ -185,7 +187,7 @@
                 <img src="img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267"
                   alt="Мороженое сливочное крем-брюле с карамельной подливкой">
                 <p class="price">415 &#8381;<span class="price-weight">/кг</span></p>
-                <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                <a class="hit-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 <a class="button-hit quick-view">Быстрый просмотр</a>
               </div>
             </li>
@@ -242,10 +244,10 @@
         <img src="img/map.png" width="1200" height="430" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="pin"></div>
         <div class="main-contact">
-          <p>Адрес главного офиса<br> и офлайн-магазина:</p>
+          <p class="contact-title">Адрес главного офиса<br> и офлайн-магазина:</p>
           <h3>ул. Большая Конюшенная 19/8, Санкт-Петербург</h3>
-          <p>Для заказов по телефону:</p>
-          <p>
+          <p class="contact-tel">Для заказов по телефону:</p>
+          <p class="contact-tel-number">
             <a class="tel" href="tel:88124502525">8 812 450-25-25</a>
           </p>
           <p class="time">(с 10 до 20 ежедневно)</p>
@@ -318,12 +320,12 @@
       </ul>
       <div class="wrap-footer-info">
         <ul class="list-style-reset footer-info">
-          <li class="favorite"><a href="#" title="Логотип Сердечко">Для поставщиков</a></li>
-          <li><a href="#">О производстве</a></li>
+          <li class="favorite footer-info-item"><a class="footer-info-link favorite" href="#" title="Логотип Сердечко">Для поставщиков</a></li>
+          <li class="footer-info-item"><a class="footer-info-link" href="#">О производстве</a></li>
         </ul>
         <ul class="list-style-reset footer-info">
-          <li><a href="#">Наши документы</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
+          <li class="footer-info-item"><a class="footer-info-link" href="#">Наши документы</a></li>
+          <li class="footer-info-item"><a class="footer-info-link" href="#">Экологические стандарты</a></li>
         </ul>
       </div>
       <div class="wrap-copyright">

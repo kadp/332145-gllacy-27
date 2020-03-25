@@ -18,7 +18,7 @@
       <div class="site-user-wrap">
         <ul class="site-navigation list-style-reset">
           <li class="site-navigation-item current">
-            <a href="catalog.html">Каталог</a>
+            <a class="navigation-link current-link" href="catalog.html">Каталог</a>
             <div class="wrap-catalog-menu">
               <ul class="catalog-menu list-style-reset">
                 <li><a class="catalog-list-link line current-submenu" href="#">Новинки</a></li>
@@ -29,8 +29,8 @@
               </ul>
             </div>
           </li>
-          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="#">О Компании</a></li>
+          <li class="site-navigation-item"><a class="navigation-link" href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a class="navigation-link" href="#">О Компании</a></li>
         </ul>
         <ul class="user-navigation list-style-reset">
           <li class="loupe">
@@ -121,8 +121,8 @@
       </div>
     </nav>
     <div class="time-and-tel">
-      <p>с 10 до 20, ежедневно</p>
-      <p><a href="tel:88124502525">8 812 450-25-25</a></p>
+      <p class="shedule">с 10 до 20, ежедневно</p>
+      <p class="phone-number"><a href="tel:88124502525">8 812 450-25-25</a></p>
     </div>
   </header>
 
@@ -158,16 +158,20 @@
             <div class="price-background">
               <div class="price-line"></div>
               <div class="price-line-center"></div>
-              <svg class="price-bt-one" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
-                <circle fill="#FFF" cx="10" cy="10" r="10" />
-                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
-              </svg>
-              <svg class="price-bt-two" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-                <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
-                <circle fill="#FFF" cx="10" cy="10" r="10" />
-                <circle fill="#ABABAB" cx="10" cy="10" r="2" />
-              </svg>
+              <button type="button" class="price-button-one" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                  <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+              </button>
+              <button type="button" class="price-button-two" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
+                  <path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" />
+                  <circle fill="#FFF" cx="10" cy="10" r="10" />
+                  <circle fill="#ABABAB" cx="10" cy="10" r="2" />
+                </svg>
+            </button>
             </div>
           </div>
           <div class="catalog-fat wrap-fat">
@@ -180,31 +184,27 @@
             </div>
           </div>
         </div>
-        <h3>Наполнители:</h3>
+        <h3 class="catalog-fillers-h3">Наполнители:</h3>
         <div class="catalog-fillers wrap-fillers">
           <div class="wrap-fillers-one">
-            <input type="checkbox" name="fillers" value="chocolate" id="checkbox-chocolate" checked><label
-              for="checkbox-chocolate">шоколадные</label>
-            <input type="checkbox" name="fillers" value="sugar" id="checkbox-shugar-powder" checked><label
-              for="checkbox-shugar-powder">сахарные присыпки</label>
-            <input type="checkbox" name="fillers" value="fruits" id="checkbox-fruits"><label
-              for="checkbox-fruits">фрукты</label>
-            <input type="checkbox" name="fillers" value="syrop" id="checkbox-syrup"><label
-              for="checkbox-syrup">сиропы</label>
+            <input type="checkbox" name="fillers" value="chocolate" id="checkbox-chocolate" checked><label for="checkbox-chocolate">шоколадные</label>
+            <input type="checkbox" name="fillers" value="sugar" id="checkbox-shugar-powder" checked><label for="checkbox-shugar-powder">сахарные присыпки</label>
+            <input type="checkbox" name="fillers" value="fruits" id="checkbox-fruits"><label for="checkbox-fruits">фрукты</label>
+            <input type="checkbox" name="fillers" value="syrop" id="checkbox-syrup"><label for="checkbox-syrup">сиропы</label>
             <input type="checkbox" name="fillers" value="jame" id="checkbox-jam"><label for="checkbox-jam">джемы</label>
           </div>
           <button class="sort-button" type="submit">Применить</button>
         </div>
       </form>
     </section>
-    <section class="catalog-assorti">
+    <section class="catalog-assorti catalog-bottom-line">
       <h2 class="visually-hidden">Ассортимент сливочного мороженного</h2>
       <ul class="list-style-reset list-assorti">
         <li>
           <div class="cream-card">
             <img src="img/cream/creamy-with-orange-jam-and-citrus-shavings.jpg" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="cream-card-link" ref="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -212,7 +212,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-coffee-with-pieces-of-chocolate.jpg" width="267" height="267" alt="Мороженое сливочно-кофейное с кусочками шоколада">
             <p class="price">380 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="cream-card-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -220,7 +220,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-strawberry-with-white-chocolate-powder.jpg" width="267" height="267" alt="Мороженое сливочно-клубничное с присыпкой из белого шоколада в форме сердечек">
             <p class="price">355 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="cream-card-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -228,7 +228,7 @@
           <div class="cream-card">
             <img src="img/cream/creme-brulee-cream-with-caramel-sauce.jpg" width="267" height="267" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
             <p class="price">415 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="cream-card-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -236,7 +236,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-with-lingonberry-jam.jpg" width="267" height="267" alt="Мороженое сливочное с брусничным джемом">
             <p class="price">325 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное с брусничным джемом </a>
+            <a class="cream-card-link" href="#">Сливочное с брусничным джемом </a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -244,7 +244,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-blueberry-with-whole-blueberries.jpg" width="267" height="267" alt="Мороженое сливочно-черничное с цельными ягодами черники">
             <p class="price">410 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <a class="cream-card-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -252,7 +252,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-lemon-with-caramel-powder.jpg" width="267" height="267"
               alt="Мороженое сливочно-лимонное с карамельной присыпкой, зеленым, красными и желтыми крупиннками"> <p class="price">375 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <a class="cream-card-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -260,7 +260,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-with-chocolate-chips.jpg" width="267" height="267" alt="Мороженое сливочное с шоколадной стружкой">
             <p class="price">320 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное с шоколадной стружкой</a>
+            <a class="cream-card-link" href="#">Сливочное с шоколадной стружкой</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -268,7 +268,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-vanilla-with-pieces-of-chocolate.jpg" width="267" height="267" alt="Мороженое сливочно-ванильное с кусочками шоколада">
             <p class="price">440 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <a class="cream-card-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -276,7 +276,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-menthol-syrup.jpg" width="267" height="267" alt="Мороженое сливочноe с ментоловым сиропом">
             <p class="price">435 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочноe с ментоловым сиропом</a>
+            <a class="cream-card-link" href="#">Сливочноe с ментоловым сиропом</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -284,7 +284,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-with-pieces-of-dark-chocolate.jpg" width="267" height="267" alt="Мороженое сливочное с кусочками черного шоколада">
             <p class="price">355 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное с кусочками черного шоколада</a>
+            <a class="cream-card-link" href="#">Сливочное с кусочками черного шоколада</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -292,7 +292,7 @@
           <div class="cream-card">
             <img src="img/cream/creamy-mint-syrup.jpg" width="267" height="267" alt="Мороженое сливочное с мятным сиропом">
             <p class="price">420 &#8381;<span class="price-weight">/кг</span></p>
-            <a href="#">Сливочное с мятным сиропом</a>
+            <a class="cream-card-link" href="#">Сливочное с мятным сиропом</a>
             <a class="button-hit quick-view">Быстрый просмотр</a>
           </div>
         </li>
@@ -360,17 +360,20 @@
     </ul>
     <div class="wrap-footer-info">
       <ul class="list-style-reset footer-info">
-        <li class="favorite"><a href="#" title="Логотип Сердечко">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
+        <li class="favorite footer-info-item"><a class="footer-info-link favorite" href="#" title="Логотип Сердечко">Для поставщиков</a></li>
+        <li class="footer-info-item"><a class="footer-info-link" href="#">О производстве</a></li>
       </ul>
       <ul class="list-style-reset footer-info">
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li class="footer-info-item"><a class="footer-info-link" href="#">Наши документы</a></li>
+        <li class="footer-info-item"><a class="footer-info-link" href="#">Экологические стандарты</a></li>
       </ul>
     </div>
     <div class="wrap-copyright">
       <a class="footer-link-html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy"></a>
-      <p>Сделано в <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2020</p>
+      <p>Сделано в
+        <a class="footer-link-html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        &copy; 2020
+      </p>
     </div>
   </footer>
 
