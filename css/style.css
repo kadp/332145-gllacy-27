@@ -133,7 +133,8 @@ html {
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
-  padding: 7px 24px;
+  padding: 9px 14px;
+  margin-right: 5px;
 }
 
 .navigation-link {
